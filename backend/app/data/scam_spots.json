@@ -1,0 +1,174 @@
+{
+  "Kochi": [
+    {
+      "location_name": "Fort Kochi Beach",
+      "scam_type": "Overpriced souvenirs",
+      "risk_level": "medium",
+      "warning_message": "Compare prices before buying beachside souvenirs and avoid pressure sales."
+    },
+    {
+      "location_name": "Chinese Fishing Nets",
+      "scam_type": "Photo fee pressure",
+      "risk_level": "low",
+      "warning_message": "Agree on any photo or demonstration fee before participating."
+    },
+    {
+      "location_name": "Jew Town",
+      "scam_type": "Inflated antique prices",
+      "risk_level": "medium",
+      "warning_message": "Ask for authenticity proof and avoid buying expensive antiques impulsively."
+    },
+    {
+      "location_name": "Ernakulam Railway Station",
+      "scam_type": "Fake porter charge",
+      "risk_level": "medium",
+      "warning_message": "Use official porters and confirm the fee before handing over luggage."
+    },
+    {
+      "location_name": "Marine Drive",
+      "scam_type": "Unofficial boat ride",
+      "risk_level": "high",
+      "warning_message": "Book boat rides only through visible counters or trusted operators."
+    }
+  ],
+  "Delhi": [
+    {
+      "location_name": "New Delhi Railway Station",
+      "scam_type": "Fake ticket office",
+      "risk_level": "high",
+      "warning_message": "Ignore claims that your train is cancelled and use official railway counters or apps."
+    },
+    {
+      "location_name": "Connaught Place",
+      "scam_type": "Forced shopping detour",
+      "risk_level": "medium",
+      "warning_message": "Be cautious if a stranger redirects you to a specific travel shop or emporium."
+    },
+    {
+      "location_name": "Paharganj Main Bazaar",
+      "scam_type": "Hotel commission scam",
+      "risk_level": "medium",
+      "warning_message": "Confirm hotel bookings directly and avoid unsolicited agents."
+    },
+    {
+      "location_name": "India Gate",
+      "scam_type": "Overpriced photography",
+      "risk_level": "low",
+      "warning_message": "Set the price clearly before accepting printed photos or instant pictures."
+    },
+    {
+      "location_name": "Chandni Chowk",
+      "scam_type": "Pickpocket distraction",
+      "risk_level": "high",
+      "warning_message": "Keep bags closed and phones secure in crowded lanes."
+    }
+  ],
+  "Jaipur": [
+    {
+      "location_name": "Hawa Mahal",
+      "scam_type": "Unofficial guide",
+      "risk_level": "medium",
+      "warning_message": "Use licensed guides and confirm the total fee before starting."
+    },
+    {
+      "location_name": "Amber Fort Parking Area",
+      "scam_type": "Inflated elephant or jeep ride",
+      "risk_level": "medium",
+      "warning_message": "Check official rates before agreeing to rides up to the fort."
+    },
+    {
+      "location_name": "Johari Bazaar",
+      "scam_type": "Fake gemstone sale",
+      "risk_level": "high",
+      "warning_message": "Avoid high-value gem purchases without certification and independent verification."
+    },
+    {
+      "location_name": "City Palace Gate",
+      "scam_type": "Ticket markup",
+      "risk_level": "low",
+      "warning_message": "Buy tickets only from official counters or official online links."
+    },
+    {
+      "location_name": "Bapu Bazaar",
+      "scam_type": "Aggressive bargaining pressure",
+      "risk_level": "medium",
+      "warning_message": "Walk away if a shopkeeper pressures you or changes the agreed price."
+    },
+    {
+      "location_name": "Jaipur Railway Station",
+      "scam_type": "Fake guides",
+      "risk_level": "high",
+      "warning_message": "Unauthorized guides may overcharge tourists or redirect them to commission shops."
+    },
+    {
+      "location_name": "Jaipur Railway Station",
+      "scam_type": "Taxi overcharging",
+      "risk_level": "medium",
+      "warning_message": "Negotiate the fare or use a trusted ride app before starting the trip."
+    }
+  ],
+  "Mumbai": [
+    {
+      "location_name": "Gateway of India",
+      "scam_type": "Unofficial ferry ticket",
+      "risk_level": "high",
+      "warning_message": "Use official ferry counters and avoid buying tickets from roaming agents."
+    },
+    {
+      "location_name": "Colaba Causeway",
+      "scam_type": "Counterfeit goods",
+      "risk_level": "medium",
+      "warning_message": "Assume branded goods on street stalls may be counterfeit."
+    },
+    {
+      "location_name": "Chhatrapati Shivaji Maharaj Terminus",
+      "scam_type": "Fake taxi helper",
+      "risk_level": "medium",
+      "warning_message": "Use prepaid taxi counters or trusted ride-hailing pickup points."
+    },
+    {
+      "location_name": "Marine Drive",
+      "scam_type": "Overpriced street snack",
+      "risk_level": "low",
+      "warning_message": "Check prices before ordering from mobile vendors."
+    },
+    {
+      "location_name": "Juhu Beach",
+      "scam_type": "Bag distraction theft",
+      "risk_level": "medium",
+      "warning_message": "Do not leave bags unattended while taking photos or buying snacks."
+    }
+  ],
+  "Bangalore": [
+    {
+      "location_name": "Majestic Bus Station",
+      "scam_type": "Fake bus assistance",
+      "risk_level": "medium",
+      "warning_message": "Verify bus platforms through official displays or staff."
+    },
+    {
+      "location_name": "KR Market",
+      "scam_type": "Pickpocket distraction",
+      "risk_level": "high",
+      "warning_message": "Keep valuables in front pockets or zipped bags in dense crowds."
+    },
+    {
+      "location_name": "MG Road",
+      "scam_type": "Overpriced pub crawl offer",
+      "risk_level": "medium",
+      "warning_message": "Avoid paying strangers upfront for nightlife packages."
+    },
+    {
+      "location_name": "Bangalore Palace",
+      "scam_type": "Unofficial guide",
+      "risk_level": "low",
+      "warning_message": "Confirm guide identity and total cost before accepting help."
+    },
+    {
+      "location_name": "Commercial Street",
+      "scam_type": "Inflated tourist price",
+      "risk_level": "medium",
+      "warning_message": "Compare shops and confirm the final price before payment."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.env
+.env.local
+vite.out.log
+vite.err.log
+
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+
+# Node
+frontend/node_modules/
+
+# Environment files
+.env
+
+# Build files
+dist/
+build/
