@@ -3,6 +3,7 @@ from typing import Any
 from fastapi import HTTPException, status
 
 from app.models.price_models import PriceCheckRequest, PriceCheckResponse
+from app.utils.matching import get_matching_key
 
 
 def format_price_range(min_price: float, max_price: float) -> str:
@@ -36,6 +37,10 @@ def calculate_overcharge_percentage(quoted_price: float, expected_max_price: flo
     return round(((quoted_price - expected_max_price) / expected_max_price) * 100)
 
 
+def calculate_money_saved(quoted_price: float, recommended_price: float) -> int:
+    return round(max(0, quoted_price - recommended_price))
+
+
 def build_price_message(risk_level: str) -> str:
     messages = {
         "LOW": "Quoted price is within the expected local range",
@@ -49,20 +54,22 @@ def check_price(
     payload: PriceCheckRequest,
     prices: dict[str, dict[str, dict[str, Any]]],
 ) -> PriceCheckResponse:
-    if payload.city not in prices:
+    matching_city = get_matching_key(prices, payload.city)
+
+    if matching_city is None:
         available_cities = ", ".join(sorted(prices.keys()))
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail=f"City '{payload.city}' is not supported. Available cities: {available_cities}.",
         )
 
-    city_prices = prices[payload.city]
+    city_prices = prices[matching_city]
     if payload.category not in city_prices:
         available_categories = ", ".join(sorted(city_prices.keys()))
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail=(
-                f"Category '{payload.category}' is not supported for {payload.city}. "
+                f"Category '{payload.category}' is not supported for {matching_city}. "
                 f"Available categories: {available_categories}."
             ),
         )
@@ -74,7 +81,7 @@ def check_price(
     risk_level = calculate_price_risk(payload.quoted_price, expected_max_price)
 
     return PriceCheckResponse(
-        city=payload.city,
+        city=matching_city,
         category=payload.category,
         quoted_price=payload.quoted_price,
         expected_range=format_price_range(expected_min_price, expected_max_price),
@@ -83,5 +90,6 @@ def check_price(
             payload.quoted_price,
             expected_max_price,
         ),
+        money_saved=calculate_money_saved(payload.quoted_price, expected_max_price),
         message=build_price_message(risk_level),
     )

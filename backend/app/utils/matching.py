@@ -13,6 +13,16 @@ def normalize_text(value: str) -> str:
     return " ".join(value.strip().lower().split())
 
 
+def get_matching_key(records: dict[str, Any], requested_key: str) -> str | None:
+    requested_key_normalized = normalize_text(requested_key)
+
+    for known_key in records:
+        if normalize_text(known_key) == requested_key_normalized:
+            return known_key
+
+    return None
+
+
 def get_matching_location_name(city_spots: list[dict[str, Any]], location_name: str) -> str | None:
     requested_location = normalize_text(location_name)
     location_names = [spot["location_name"] for spot in city_spots]

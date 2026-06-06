@@ -1,0 +1,202 @@
+[
+  {
+    "id": "bangalore-bangalore-palace",
+    "city": "Bangalore",
+    "attraction_name": "Bangalore Palace",
+    "min_inr": 240,
+    "max_inr": 520,
+    "unit": "per person",
+    "note": "Palace visitor range estimate",
+    "source": "static_fallback"
+  },
+  {
+    "id": "bangalore-government-museum-bangalore",
+    "city": "Bangalore",
+    "attraction_name": "Government Museum Bangalore",
+    "min_inr": 20,
+    "max_inr": 100,
+    "unit": "per person",
+    "note": "Museum visitor range estimate",
+    "source": "static_fallback"
+  },
+  {
+    "id": "bangalore-lalbagh-botanical-garden",
+    "city": "Bangalore",
+    "attraction_name": "Lalbagh Botanical Garden",
+    "min_inr": 30,
+    "max_inr": 30,
+    "unit": "per person",
+    "note": "Garden entry estimate",
+    "source": "static_fallback"
+  },
+  {
+    "id": "bangalore-tipu-sultan-s-summer-palace",
+    "city": "Bangalore",
+    "attraction_name": "Tipu Sultan's Summer Palace",
+    "min_inr": 20,
+    "max_inr": 200,
+    "unit": "per person",
+    "note": "Monument visitor range estimate",
+    "source": "static_fallback"
+  },
+  {
+    "id": "delhi-humayun-s-tomb",
+    "city": "Delhi",
+    "attraction_name": "Humayun's Tomb",
+    "min_inr": 35,
+    "max_inr": 600,
+    "unit": "per person",
+    "note": "ASI monument common Indian/foreign visitor range",
+    "source": "static_fallback"
+  },
+  {
+    "id": "delhi-national-museum-delhi",
+    "city": "Delhi",
+    "attraction_name": "National Museum Delhi",
+    "min_inr": 20,
+    "max_inr": 650,
+    "unit": "per person",
+    "note": "Museum visitor range estimate",
+    "source": "static_fallback"
+  },
+  {
+    "id": "delhi-qutub-minar",
+    "city": "Delhi",
+    "attraction_name": "Qutub Minar",
+    "min_inr": 35,
+    "max_inr": 600,
+    "unit": "per person",
+    "note": "ASI monument common Indian/foreign visitor range",
+    "source": "static_fallback"
+  },
+  {
+    "id": "delhi-red-fort",
+    "city": "Delhi",
+    "attraction_name": "Red Fort",
+    "min_inr": 35,
+    "max_inr": 600,
+    "unit": "per person",
+    "note": "ASI monument common Indian/foreign visitor range",
+    "source": "static_fallback"
+  },
+  {
+    "id": "jaipur-amber-fort",
+    "city": "Jaipur",
+    "attraction_name": "Amber Fort",
+    "min_inr": 100,
+    "max_inr": 550,
+    "unit": "per person",
+    "note": "Rajasthan monument visitor range estimate",
+    "source": "static_fallback"
+  },
+  {
+    "id": "jaipur-city-palace-jaipur",
+    "city": "Jaipur",
+    "attraction_name": "City Palace Jaipur",
+    "min_inr": 200,
+    "max_inr": 700,
+    "unit": "per person",
+    "note": "Palace visitor range estimate",
+    "source": "static_fallback"
+  },
+  {
+    "id": "jaipur-hawa-mahal",
+    "city": "Jaipur",
+    "attraction_name": "Hawa Mahal",
+    "min_inr": 50,
+    "max_inr": 200,
+    "unit": "per person",
+    "note": "Rajasthan monument visitor range estimate",
+    "source": "static_fallback"
+  },
+  {
+    "id": "jaipur-jantar-mantar-jaipur",
+    "city": "Jaipur",
+    "attraction_name": "Jantar Mantar Jaipur",
+    "min_inr": 50,
+    "max_inr": 200,
+    "unit": "per person",
+    "note": "Rajasthan monument visitor range estimate",
+    "source": "static_fallback"
+  },
+  {
+    "id": "kochi-fort-kochi-beach",
+    "city": "Kochi",
+    "attraction_name": "Fort Kochi Beach",
+    "min_inr": 0,
+    "max_inr": 0,
+    "unit": "per person",
+    "note": "Public beach access",
+    "source": "static_fallback"
+  },
+  {
+    "id": "kochi-hill-palace-museum",
+    "city": "Kochi",
+    "attraction_name": "Hill Palace Museum",
+    "min_inr": 30,
+    "max_inr": 100,
+    "unit": "per person",
+    "note": "Museum ticket estimate",
+    "source": "static_fallback"
+  },
+  {
+    "id": "kochi-kerala-folklore-museum",
+    "city": "Kochi",
+    "attraction_name": "Kerala Folklore Museum",
+    "min_inr": 100,
+    "max_inr": 200,
+    "unit": "per person",
+    "note": "Museum ticket estimate",
+    "source": "static_fallback"
+  },
+  {
+    "id": "kochi-mattancherry-palace",
+    "city": "Kochi",
+    "attraction_name": "Mattancherry Palace",
+    "min_inr": 5,
+    "max_inr": 100,
+    "unit": "per person",
+    "note": "Kerala tourism heritage site estimate",
+    "source": "static_fallback"
+  },
+  {
+    "id": "mumbai-csmvs-museum",
+    "city": "Mumbai",
+    "attraction_name": "CSMVS Museum",
+    "min_inr": 150,
+    "max_inr": 700,
+    "unit": "per person",
+    "note": "Museum visitor range estimate",
+    "source": "static_fallback"
+  },
+  {
+    "id": "mumbai-elephanta-caves",
+    "city": "Mumbai",
+    "attraction_name": "Elephanta Caves",
+    "min_inr": 40,
+    "max_inr": 600,
+    "unit": "per person",
+    "note": "ASI monument common Indian/foreign visitor range",
+    "source": "static_fallback"
+  },
+  {
+    "id": "mumbai-gateway-of-india",
+    "city": "Mumbai",
+    "attraction_name": "Gateway of India",
+    "min_inr": 0,
+    "max_inr": 0,
+    "unit": "per person",
+    "note": "Public monument access",
+    "source": "static_fallback"
+  },
+  {
+    "id": "mumbai-sanjay-gandhi-national-park",
+    "city": "Mumbai",
+    "attraction_name": "Sanjay Gandhi National Park",
+    "min_inr": 85,
+    "max_inr": 300,
+    "unit": "per person",
+    "note": "Park entry and attraction estimate",
+    "source": "static_fallback"
+  }
+]

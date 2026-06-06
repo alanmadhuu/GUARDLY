@@ -1,0 +1,162 @@
+{
+  "Kochi": {
+    "auto_per_km": {
+      "min_inr": 18,
+      "max_inr": 25,
+      "unit": "per km",
+      "note": "Typical city auto-rickshaw fare after the minimum fare."
+    },
+    "taxi_per_km": {
+      "min_inr": 22,
+      "max_inr": 35,
+      "unit": "per km",
+      "note": "Regular taxi or app-cab estimate within city limits."
+    },
+    "tour_guide": {
+      "min_inr": 1500,
+      "max_inr": 3000,
+      "unit": "half day",
+      "note": "Licensed local guide for Fort Kochi or heritage areas."
+    },
+    "monument_ticket": {
+      "min_inr": 20,
+      "max_inr": 500,
+      "unit": "per person",
+      "note": "Varies between Indian and foreign visitor ticket categories."
+    },
+    "bottled_water": {
+      "min_inr": 20,
+      "max_inr": 30,
+      "unit": "1 liter bottle",
+      "note": "MRP is usually printed on the bottle."
+    }
+  },
+  "Delhi": {
+    "auto_per_km": {
+      "min_inr": 17,
+      "max_inr": 25,
+      "unit": "per km",
+      "note": "Typical metered auto-rickshaw range after flag-down fare."
+    },
+    "taxi_per_km": {
+      "min_inr": 25,
+      "max_inr": 45,
+      "unit": "per km",
+      "note": "App-cab and city taxi fares vary with traffic and demand."
+    },
+    "tour_guide": {
+      "min_inr": 2000,
+      "max_inr": 4500,
+      "unit": "half day",
+      "note": "Guide rates are higher around Old Delhi, Red Fort, and Qutub Minar."
+    },
+    "monument_ticket": {
+      "min_inr": 35,
+      "max_inr": 600,
+      "unit": "per person",
+      "note": "Major monuments often have separate Indian and foreign visitor rates."
+    },
+    "bottled_water": {
+      "min_inr": 20,
+      "max_inr": 30,
+      "unit": "1 liter bottle",
+      "note": "Avoid paying above MRP unless buying in a premium venue."
+    }
+  },
+  "Jaipur": {
+    "auto_per_km": {
+      "min_inr": 18,
+      "max_inr": 28,
+      "unit": "per km",
+      "note": "Tourist-area autos may quote fixed prices instead of meter fares."
+    },
+    "taxi_per_km": {
+      "min_inr": 24,
+      "max_inr": 40,
+      "unit": "per km",
+      "note": "City taxi rates may rise for Amber Fort and outskirts."
+    },
+    "tour_guide": {
+      "min_inr": 1500,
+      "max_inr": 3500,
+      "unit": "half day",
+      "note": "Common for City Palace, Hawa Mahal, and Amber Fort visits."
+    },
+    "monument_ticket": {
+      "min_inr": 50,
+      "max_inr": 700,
+      "unit": "per person",
+      "note": "Composite tickets may cost more but cover multiple sites."
+    },
+    "bottled_water": {
+      "min_inr": 20,
+      "max_inr": 30,
+      "unit": "1 liter bottle",
+      "note": "MRP bottles are widely available near tourist areas."
+    }
+  },
+  "Mumbai": {
+    "auto_per_km": {
+      "min_inr": 18,
+      "max_inr": 26,
+      "unit": "per km",
+      "note": "Autos are common in suburbs; they are not available in South Mumbai."
+    },
+    "taxi_per_km": {
+      "min_inr": 28,
+      "max_inr": 50,
+      "unit": "per km",
+      "note": "Black-and-yellow taxis and app cabs vary by traffic and surge."
+    },
+    "tour_guide": {
+      "min_inr": 2500,
+      "max_inr": 5000,
+      "unit": "half day",
+      "note": "Popular for Colaba, Dharavi, and heritage walking tours."
+    },
+    "monument_ticket": {
+      "min_inr": 40,
+      "max_inr": 650,
+      "unit": "per person",
+      "note": "Museum and cave site tickets vary by visitor category."
+    },
+    "bottled_water": {
+      "min_inr": 20,
+      "max_inr": 35,
+      "unit": "1 liter bottle",
+      "note": "Prices can be higher inside hotels, airports, and cinemas."
+    }
+  },
+  "Bangalore": {
+    "auto_per_km": {
+      "min_inr": 18,
+      "max_inr": 30,
+      "unit": "per km",
+      "note": "Metered autos and app autos vary by traffic and demand."
+    },
+    "taxi_per_km": {
+      "min_inr": 25,
+      "max_inr": 45,
+      "unit": "per km",
+      "note": "App-cab fares often rise during peak commute hours."
+    },
+    "tour_guide": {
+      "min_inr": 1800,
+      "max_inr": 4000,
+      "unit": "half day",
+      "note": "Common for city walks, markets, and day trips near Bangalore."
+    },
+    "monument_ticket": {
+      "min_inr": 25,
+      "max_inr": 500,
+      "unit": "per person",
+      "note": "Government gardens and museums are usually lower cost."
+    },
+    "bottled_water": {
+      "min_inr": 20,
+      "max_inr": 30,
+      "unit": "1 liter bottle",
+      "note": "Check printed MRP before paying."
+    }
+  }
+}

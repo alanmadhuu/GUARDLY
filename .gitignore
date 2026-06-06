@@ -2,13 +2,17 @@ node_modules/
 dist/
 .env
 .env.local
+backend/.env
 vite.out.log
 vite.err.log
 
 # Python
 backend/.venv/
+.venv/
 __pycache__/
+**pycache**/
 *.pyc
+.vscode/
 
 # Node
 frontend/node_modules/

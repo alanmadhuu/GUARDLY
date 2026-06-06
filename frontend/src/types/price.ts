@@ -12,5 +12,6 @@ export type PriceCheckResponse = {
   expected_range: string;
   risk_level: string;
   overcharge_percentage: number;
+  money_saved: number;
   message: string;
 };

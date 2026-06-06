@@ -1,8 +1,9 @@
 import { AlertTriangle, MapPinned, MessageSquareText, Navigation, Percent } from "lucide-react";
 import { FormEvent, useState } from "react";
+import { saveRouteActivity } from "../services/activity";
 import { ApiError, checkRoute } from "../services/api";
 import type { RouteCheckResponse } from "../types/route";
-import RouteMap from "./RouteMap";
+import TouristMap from "./TouristMap";
 import {
   ActionButton,
   EmptyState,
@@ -62,6 +63,7 @@ export default function RouteMonitor() {
         actual_distance_km: Number(actualDistanceKm),
       });
       setResult(response);
+      saveRouteActivity(response);
     } catch (caught) {
       setError(caught instanceof Error ? caught : new Error("Unable to analyze route."));
     } finally {
@@ -71,7 +73,14 @@ export default function RouteMonitor() {
 
   return (
     <div className="grid gap-5">
-      <RouteMap origin={displayedRoute.origin} destination={displayedRoute.destination} />
+      <TouristMap
+        compact
+        route={{
+          destination: displayedRoute.destination,
+          origin: displayedRoute.origin,
+          riskLevel: result?.risk_level,
+        }}
+      />
 
       <div className="grid gap-5 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
         <Panel>

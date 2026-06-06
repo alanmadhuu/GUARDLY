@@ -15,4 +15,5 @@ class PriceCheckResponse(BaseModel):
     expected_range: str
     risk_level: str
     overcharge_percentage: int
+    money_saved: int
     message: str

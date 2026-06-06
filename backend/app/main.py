@@ -1,11 +1,16 @@
 from contextlib import asynccontextmanager
+from pathlib import Path
 from typing import Any
 
+from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.routes import location, price, route
+from app.routes import agent, explain, location, pickup, price, route
+from app.services.ai_service import is_groq_configured
 from app.utils.data_loader import get_data_summary, load_tourist_data
+
+load_dotenv(Path(__file__).resolve().parents[1] / ".env")
 
 
 @asynccontextmanager
@@ -37,11 +42,21 @@ app.add_middleware(
 app.include_router(price.router)
 app.include_router(route.router)
 app.include_router(location.router)
+app.include_router(pickup.router)
+app.include_router(agent.router)
+app.include_router(explain.router)
 
 
 @app.get("/health")
-def health_check() -> dict[str, str]:
-    return {"status": "ok"}
+def health_check() -> dict[str, bool]:
+    tourist_data = getattr(app.state, "tourist_data", {})
+
+    return {
+        "api": True,
+        "prices_loaded": bool(tourist_data.get("prices")),
+        "scam_data_loaded": bool(tourist_data.get("scam_spots")),
+        "groq_configured": is_groq_configured(),
+    }
 
 
 @app.get("/health/data")

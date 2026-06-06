@@ -1,0 +1,162 @@
+[
+  {
+    "id": "bangalore-commercial-street-police-station",
+    "city": "Bangalore",
+    "name": "Commercial Street Police Station",
+    "lat": 12.9822,
+    "lng": 77.6083,
+    "source": "static_fallback"
+  },
+  {
+    "id": "bangalore-cubbon-park-police-station",
+    "city": "Bangalore",
+    "name": "Cubbon Park Police Station",
+    "lat": 12.9767,
+    "lng": 77.5963,
+    "source": "static_fallback"
+  },
+  {
+    "id": "bangalore-kr-market-police-station",
+    "city": "Bangalore",
+    "name": "KR Market Police Station",
+    "lat": 12.9615,
+    "lng": 77.5761,
+    "source": "static_fallback"
+  },
+  {
+    "id": "bangalore-upparpet-police-station",
+    "city": "Bangalore",
+    "name": "Upparpet Police Station",
+    "lat": 12.9779,
+    "lng": 77.5727,
+    "source": "static_fallback"
+  },
+  {
+    "id": "delhi-chandni-chowk-police-station",
+    "city": "Delhi",
+    "name": "Chandni Chowk Police Station",
+    "lat": 28.6506,
+    "lng": 77.2303,
+    "source": "static_fallback"
+  },
+  {
+    "id": "delhi-connaught-place-police-station",
+    "city": "Delhi",
+    "name": "Connaught Place Police Station",
+    "lat": 28.6328,
+    "lng": 77.2197,
+    "source": "static_fallback"
+  },
+  {
+    "id": "delhi-new-delhi-railway-station-police-post",
+    "city": "Delhi",
+    "name": "New Delhi Railway Station Police Post",
+    "lat": 28.6425,
+    "lng": 77.2195,
+    "source": "static_fallback"
+  },
+  {
+    "id": "delhi-parliament-street-police-station",
+    "city": "Delhi",
+    "name": "Parliament Street Police Station",
+    "lat": 28.6249,
+    "lng": 77.2108,
+    "source": "static_fallback"
+  },
+  {
+    "id": "jaipur-amer-police-station",
+    "city": "Jaipur",
+    "name": "Amer Police Station",
+    "lat": 26.985,
+    "lng": 75.851,
+    "source": "static_fallback"
+  },
+  {
+    "id": "jaipur-manak-chowk-police-station",
+    "city": "Jaipur",
+    "name": "Manak Chowk Police Station",
+    "lat": 26.9251,
+    "lng": 75.8234,
+    "source": "static_fallback"
+  },
+  {
+    "id": "jaipur-sindhi-camp-police-station",
+    "city": "Jaipur",
+    "name": "Sindhi Camp Police Station",
+    "lat": 26.9221,
+    "lng": 75.8008,
+    "source": "static_fallback"
+  },
+  {
+    "id": "jaipur-tourist-police-station-jaipur",
+    "city": "Jaipur",
+    "name": "Tourist Police Station Jaipur",
+    "lat": 26.9196,
+    "lng": 75.7885,
+    "source": "static_fallback"
+  },
+  {
+    "id": "kochi-ernakulam-central-police-station",
+    "city": "Kochi",
+    "name": "Ernakulam Central Police Station",
+    "lat": 9.9793,
+    "lng": 76.2835,
+    "source": "static_fallback"
+  },
+  {
+    "id": "kochi-fort-kochi-police-station",
+    "city": "Kochi",
+    "name": "Fort Kochi Police Station",
+    "lat": 9.9667,
+    "lng": 76.243,
+    "source": "static_fallback"
+  },
+  {
+    "id": "kochi-mattancherry-police-station",
+    "city": "Kochi",
+    "name": "Mattancherry Police Station",
+    "lat": 9.9582,
+    "lng": 76.259,
+    "source": "static_fallback"
+  },
+  {
+    "id": "kochi-palarivattom-police-station",
+    "city": "Kochi",
+    "name": "Palarivattom Police Station",
+    "lat": 10.0002,
+    "lng": 76.3073,
+    "source": "static_fallback"
+  },
+  {
+    "id": "mumbai-azad-maidan-police-station",
+    "city": "Mumbai",
+    "name": "Azad Maidan Police Station",
+    "lat": 18.9385,
+    "lng": 72.8292,
+    "source": "static_fallback"
+  },
+  {
+    "id": "mumbai-colaba-police-station",
+    "city": "Mumbai",
+    "name": "Colaba Police Station",
+    "lat": 18.9168,
+    "lng": 72.831,
+    "source": "static_fallback"
+  },
+  {
+    "id": "mumbai-juhu-police-station",
+    "city": "Mumbai",
+    "name": "Juhu Police Station",
+    "lat": 19.103,
+    "lng": 72.827,
+    "source": "static_fallback"
+  },
+  {
+    "id": "mumbai-marine-drive-police-station",
+    "city": "Mumbai",
+    "name": "Marine Drive Police Station",
+    "lat": 18.9432,
+    "lng": 72.8234,
+    "source": "static_fallback"
+  }
+]

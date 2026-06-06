@@ -1,5 +1,6 @@
 import { AlertTriangle, BadgeDollarSign, MessageSquareText, Percent } from "lucide-react";
 import { FormEvent, useState } from "react";
+import { savePriceActivity } from "../services/activity";
 import { ApiError, checkPrice } from "../services/api";
 import type { PriceCheckResponse } from "../types/price";
 import {
@@ -14,9 +15,32 @@ import {
   RiskBadge,
 } from "./ui";
 
+const categoryOptions = [
+  {
+    value: "auto_per_km",
+    label: "Auto rickshaw per km",
+  },
+  {
+    value: "taxi_per_km",
+    label: "Taxi per km",
+  },
+  {
+    value: "tour_guide",
+    label: "Tour guide",
+  },
+  {
+    value: "monument_ticket",
+    label: "Monument ticket",
+  },
+  {
+    value: "bottled_water",
+    label: "Bottled water",
+  },
+];
+
 export default function PriceChecker() {
   const [city, setCity] = useState("");
-  const [category, setCategory] = useState("");
+  const [category, setCategory] = useState(categoryOptions[0].value);
   const [quotedPrice, setQuotedPrice] = useState("");
   const [distanceKm, setDistanceKm] = useState("");
   const [result, setResult] = useState<PriceCheckResponse | null>(null);
@@ -37,6 +61,7 @@ export default function PriceChecker() {
         distance_km: Number(distanceKm),
       });
       setResult(response);
+      savePriceActivity(response);
     } catch (caught) {
       setError(caught instanceof Error ? caught : new Error("Unable to check price."));
     } finally {
@@ -49,12 +74,23 @@ export default function PriceChecker() {
       <Panel>
         <form className="grid gap-4" onSubmit={handleSubmit}>
           <Field label="City" onChange={setCity} placeholder="Jaipur" value={city} />
-          <Field
-            label="Category"
-            onChange={setCategory}
-            placeholder="auto_per_km"
-            value={category}
-          />
+          <label className="flex flex-col gap-2 text-sm font-medium text-stone-800">
+            Category
+            <select
+              className="h-11 rounded-md border border-stone-300 bg-white px-3 text-stone-950 shadow-sm outline-none transition focus:border-teal-700 focus:ring-2 focus:ring-teal-100"
+              onChange={(event) => setCategory(event.target.value)}
+              value={category}
+            >
+              {categoryOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+            <span className="text-xs font-normal text-stone-500">
+              Uses backend category key: {category}
+            </span>
+          </label>
           <Field
             label="Quoted Price"
             min={0}

@@ -1,4 +1,5 @@
 import type { LocationWarningRequest, LocationWarningResponse } from "../types/location";
+import type { PickupOptimizeRequest, PickupOptimizeResponse } from "../types/pickup";
 import type { PriceCheckRequest, PriceCheckResponse } from "../types/price";
 import type { RouteCheckRequest, RouteCheckResponse } from "../types/route";
 
@@ -80,4 +81,10 @@ export function checkLocationWarning(
   payload: LocationWarningRequest,
 ): Promise<LocationWarningResponse> {
   return postJson<LocationWarningRequest, LocationWarningResponse>("/location-warning", payload);
+}
+
+export function optimizePickup(
+  payload: PickupOptimizeRequest,
+): Promise<PickupOptimizeResponse> {
+  return postJson<PickupOptimizeRequest, PickupOptimizeResponse>("/optimize-pickup", payload);
 }

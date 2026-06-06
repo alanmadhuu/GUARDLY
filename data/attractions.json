@@ -1,0 +1,362 @@
+[
+  {
+    "id": "bangalore-bangalore-palace",
+    "city": "Bangalore",
+    "name": "Bangalore Palace",
+    "category": "palace",
+    "lat": 12.9987,
+    "lng": 77.592,
+    "source": "static_fallback"
+  },
+  {
+    "id": "bangalore-commercial-street",
+    "city": "Bangalore",
+    "name": "Commercial Street",
+    "category": "market",
+    "lat": 12.9822,
+    "lng": 77.6083,
+    "source": "static_fallback"
+  },
+  {
+    "id": "bangalore-cubbon-park",
+    "city": "Bangalore",
+    "name": "Cubbon Park",
+    "category": "park",
+    "lat": 12.9763,
+    "lng": 77.5929,
+    "source": "static_fallback"
+  },
+  {
+    "id": "bangalore-government-museum-bangalore",
+    "city": "Bangalore",
+    "name": "Government Museum Bangalore",
+    "category": "museum",
+    "lat": 12.9745,
+    "lng": 77.5963,
+    "source": "static_fallback"
+  },
+  {
+    "id": "bangalore-iskcon-temple-bangalore",
+    "city": "Bangalore",
+    "name": "ISKCON Temple Bangalore",
+    "category": "temple",
+    "lat": 13.0098,
+    "lng": 77.5511,
+    "source": "static_fallback"
+  },
+  {
+    "id": "bangalore-lalbagh-botanical-garden",
+    "city": "Bangalore",
+    "name": "Lalbagh Botanical Garden",
+    "category": "garden",
+    "lat": 12.9507,
+    "lng": 77.5848,
+    "source": "static_fallback"
+  },
+  {
+    "id": "bangalore-tipu-sultan-s-summer-palace",
+    "city": "Bangalore",
+    "name": "Tipu Sultan's Summer Palace",
+    "category": "palace",
+    "lat": 12.9595,
+    "lng": 77.5736,
+    "source": "static_fallback"
+  },
+  {
+    "id": "bangalore-vidhana-soudha",
+    "city": "Bangalore",
+    "name": "Vidhana Soudha",
+    "category": "landmark",
+    "lat": 12.9796,
+    "lng": 77.5907,
+    "source": "static_fallback"
+  },
+  {
+    "id": "delhi-akshardham-temple",
+    "city": "Delhi",
+    "name": "Akshardham Temple",
+    "category": "temple",
+    "lat": 28.6127,
+    "lng": 77.2773,
+    "source": "static_fallback"
+  },
+  {
+    "id": "delhi-humayun-s-tomb",
+    "city": "Delhi",
+    "name": "Humayun's Tomb",
+    "category": "monument",
+    "lat": 28.5933,
+    "lng": 77.2507,
+    "source": "static_fallback"
+  },
+  {
+    "id": "delhi-india-gate",
+    "city": "Delhi",
+    "name": "India Gate",
+    "category": "monument",
+    "lat": 28.6129,
+    "lng": 77.2295,
+    "source": "static_fallback"
+  },
+  {
+    "id": "delhi-jama-masjid",
+    "city": "Delhi",
+    "name": "Jama Masjid",
+    "category": "mosque",
+    "lat": 28.6507,
+    "lng": 77.2334,
+    "source": "static_fallback"
+  },
+  {
+    "id": "delhi-lotus-temple",
+    "city": "Delhi",
+    "name": "Lotus Temple",
+    "category": "temple",
+    "lat": 28.5535,
+    "lng": 77.2588,
+    "source": "static_fallback"
+  },
+  {
+    "id": "delhi-national-museum-delhi",
+    "city": "Delhi",
+    "name": "National Museum Delhi",
+    "category": "museum",
+    "lat": 28.6118,
+    "lng": 77.2195,
+    "source": "static_fallback"
+  },
+  {
+    "id": "delhi-qutub-minar",
+    "city": "Delhi",
+    "name": "Qutub Minar",
+    "category": "monument",
+    "lat": 28.5245,
+    "lng": 77.1855,
+    "source": "static_fallback"
+  },
+  {
+    "id": "delhi-red-fort",
+    "city": "Delhi",
+    "name": "Red Fort",
+    "category": "fort",
+    "lat": 28.6562,
+    "lng": 77.241,
+    "source": "static_fallback"
+  },
+  {
+    "id": "jaipur-albert-hall-museum",
+    "city": "Jaipur",
+    "name": "Albert Hall Museum",
+    "category": "museum",
+    "lat": 26.9117,
+    "lng": 75.8195,
+    "source": "static_fallback"
+  },
+  {
+    "id": "jaipur-amber-fort",
+    "city": "Jaipur",
+    "name": "Amber Fort",
+    "category": "fort",
+    "lat": 26.9855,
+    "lng": 75.8513,
+    "source": "static_fallback"
+  },
+  {
+    "id": "jaipur-birla-mandir-jaipur",
+    "city": "Jaipur",
+    "name": "Birla Mandir Jaipur",
+    "category": "temple",
+    "lat": 26.8924,
+    "lng": 75.8152,
+    "source": "static_fallback"
+  },
+  {
+    "id": "jaipur-city-palace-jaipur",
+    "city": "Jaipur",
+    "name": "City Palace Jaipur",
+    "category": "palace",
+    "lat": 26.9258,
+    "lng": 75.8237,
+    "source": "static_fallback"
+  },
+  {
+    "id": "jaipur-hawa-mahal",
+    "city": "Jaipur",
+    "name": "Hawa Mahal",
+    "category": "palace",
+    "lat": 26.9239,
+    "lng": 75.8267,
+    "source": "static_fallback"
+  },
+  {
+    "id": "jaipur-jal-mahal",
+    "city": "Jaipur",
+    "name": "Jal Mahal",
+    "category": "palace",
+    "lat": 26.9535,
+    "lng": 75.846,
+    "source": "static_fallback"
+  },
+  {
+    "id": "jaipur-jantar-mantar-jaipur",
+    "city": "Jaipur",
+    "name": "Jantar Mantar Jaipur",
+    "category": "observatory",
+    "lat": 26.9248,
+    "lng": 75.8246,
+    "source": "static_fallback"
+  },
+  {
+    "id": "jaipur-nahargarh-fort",
+    "city": "Jaipur",
+    "name": "Nahargarh Fort",
+    "category": "fort",
+    "lat": 26.9373,
+    "lng": 75.8155,
+    "source": "static_fallback"
+  },
+  {
+    "id": "kochi-chinese-fishing-nets",
+    "city": "Kochi",
+    "name": "Chinese Fishing Nets",
+    "category": "heritage",
+    "lat": 9.9673,
+    "lng": 76.2429,
+    "source": "static_fallback"
+  },
+  {
+    "id": "kochi-fort-kochi-beach",
+    "city": "Kochi",
+    "name": "Fort Kochi Beach",
+    "category": "beach",
+    "lat": 9.9656,
+    "lng": 76.2422,
+    "source": "static_fallback"
+  },
+  {
+    "id": "kochi-hill-palace-museum",
+    "city": "Kochi",
+    "name": "Hill Palace Museum",
+    "category": "museum",
+    "lat": 9.9526,
+    "lng": 76.3639,
+    "source": "static_fallback"
+  },
+  {
+    "id": "kochi-kerala-folklore-museum",
+    "city": "Kochi",
+    "name": "Kerala Folklore Museum",
+    "category": "museum",
+    "lat": 9.9393,
+    "lng": 76.3001,
+    "source": "static_fallback"
+  },
+  {
+    "id": "kochi-marine-drive-kochi",
+    "city": "Kochi",
+    "name": "Marine Drive Kochi",
+    "category": "promenade",
+    "lat": 9.9816,
+    "lng": 76.2762,
+    "source": "static_fallback"
+  },
+  {
+    "id": "kochi-mattancherry-palace",
+    "city": "Kochi",
+    "name": "Mattancherry Palace",
+    "category": "museum",
+    "lat": 9.9581,
+    "lng": 76.2596,
+    "source": "static_fallback"
+  },
+  {
+    "id": "kochi-paradesi-synagogue",
+    "city": "Kochi",
+    "name": "Paradesi Synagogue",
+    "category": "heritage",
+    "lat": 9.9575,
+    "lng": 76.2594,
+    "source": "static_fallback"
+  },
+  {
+    "id": "kochi-st-francis-church",
+    "city": "Kochi",
+    "name": "St Francis Church",
+    "category": "church",
+    "lat": 9.9669,
+    "lng": 76.2428,
+    "source": "static_fallback"
+  },
+  {
+    "id": "mumbai-chhatrapati-shivaji-maharaj-terminus",
+    "city": "Mumbai",
+    "name": "Chhatrapati Shivaji Maharaj Terminus",
+    "category": "heritage",
+    "lat": 18.9398,
+    "lng": 72.8355,
+    "source": "static_fallback"
+  },
+  {
+    "id": "mumbai-chhatrapati-shivaji-maharaj-vastu-sangrahalaya",
+    "city": "Mumbai",
+    "name": "Chhatrapati Shivaji Maharaj Vastu Sangrahalaya",
+    "category": "museum",
+    "lat": 18.9269,
+    "lng": 72.8326,
+    "source": "static_fallback"
+  },
+  {
+    "id": "mumbai-elephanta-caves",
+    "city": "Mumbai",
+    "name": "Elephanta Caves",
+    "category": "caves",
+    "lat": 18.9633,
+    "lng": 72.9315,
+    "source": "static_fallback"
+  },
+  {
+    "id": "mumbai-gateway-of-india",
+    "city": "Mumbai",
+    "name": "Gateway of India",
+    "category": "monument",
+    "lat": 18.922,
+    "lng": 72.8347,
+    "source": "static_fallback"
+  },
+  {
+    "id": "mumbai-haji-ali-dargah",
+    "city": "Mumbai",
+    "name": "Haji Ali Dargah",
+    "category": "dargah",
+    "lat": 18.9827,
+    "lng": 72.8089,
+    "source": "static_fallback"
+  },
+  {
+    "id": "mumbai-juhu-beach",
+    "city": "Mumbai",
+    "name": "Juhu Beach",
+    "category": "beach",
+    "lat": 19.0988,
+    "lng": 72.8267,
+    "source": "static_fallback"
+  },
+  {
+    "id": "mumbai-marine-drive-mumbai",
+    "city": "Mumbai",
+    "name": "Marine Drive Mumbai",
+    "category": "promenade",
+    "lat": 18.9432,
+    "lng": 72.8234,
+    "source": "static_fallback"
+  },
+  {
+    "id": "mumbai-sanjay-gandhi-national-park",
+    "city": "Mumbai",
+    "name": "Sanjay Gandhi National Park",
+    "category": "park",
+    "lat": 19.2147,
+    "lng": 72.9106,
+    "source": "static_fallback"
+  }
+]
