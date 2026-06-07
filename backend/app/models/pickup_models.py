@@ -1,3 +1,5 @@
+from typing import Literal
+
 from pydantic import BaseModel, Field
 
 from app.models.route_models import Coordinates
@@ -5,6 +7,8 @@ from app.models.route_models import Coordinates
 
 class PickupOptimizeRequest(BaseModel):
     current_location: Coordinates
+    destination_location: Coordinates | None = None
+    optimize_for: Literal["current_location", "destination"] = "current_location"
 
 
 class PickupScoreBreakdown(BaseModel):
@@ -32,6 +36,9 @@ class PickupOptimizeResponse(BaseModel):
     pickup_score: int
     reason: str
     current_location: Coordinates
+    destination_location: Coordinates | None = None
+    optimization_target: str = "current_location"
+    optimization_location: Coordinates
     recommended_location: Coordinates
     candidates: list[PickupCandidate]
     provider_fare_data_used: bool = Field(

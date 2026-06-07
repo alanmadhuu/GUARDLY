@@ -1,8 +1,8 @@
-# Tourist Shield Backend
+# GUARDLY Backend
 
 ## Problem Statement
 
-Tourists are vulnerable to overcharging, unsafe route deviations, and location-specific scams because they lack local context. Tourist Shield provides fast local checks that help a traveler understand whether a fare, route, or area looks risky.
+Tourists are vulnerable to overcharging, unsafe route deviations, and location-specific scams because they lack local context. GUARDLY provides fast local checks that help a traveler understand whether a fare, route, or area looks risky.
 
 ## Solution
 

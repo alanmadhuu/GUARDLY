@@ -1,1 +1,1 @@
-"""Tourist Shield backend application package."""
+"""GUARDLY backend application package."""

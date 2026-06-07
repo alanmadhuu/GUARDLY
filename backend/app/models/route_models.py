@@ -19,3 +19,6 @@ class RouteCheckResponse(BaseModel):
     risk_level: str
     route_deviation_detected: bool
     message: str
+    traffic_level: str = "UNKNOWN"
+    traffic_delay_minutes: int = 0
+    traffic_adjustment_applied: bool = False

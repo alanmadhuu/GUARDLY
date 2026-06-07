@@ -29,6 +29,24 @@
       "scam_type": "Unofficial boat ride",
       "risk_level": "high",
       "warning_message": "Book boat rides only through visible counters or trusted operators."
+    },
+    {
+      "location_name": "Mattancherry Palace",
+      "scam_type": "Unofficial ticket helper",
+      "risk_level": "low",
+      "warning_message": "Buy entry tickets only at the official counter and ignore shortcut offers."
+    },
+    {
+      "location_name": "Vypeen Ferry Terminal",
+      "scam_type": "Private ferry overcharge",
+      "risk_level": "medium",
+      "warning_message": "Check posted ferry fares before accepting private boat offers."
+    },
+    {
+      "location_name": "Lulu Mall Taxi Bay",
+      "scam_type": "Taxi pickup surcharge",
+      "risk_level": "low",
+      "warning_message": "Confirm app pickup point and fare before entering a cab."
     }
   ],
   "Delhi": [
@@ -61,6 +79,24 @@
       "scam_type": "Pickpocket distraction",
       "risk_level": "high",
       "warning_message": "Keep bags closed and phones secure in crowded lanes."
+    },
+    {
+      "location_name": "Red Fort Gate",
+      "scam_type": "Closed monument claim",
+      "risk_level": "medium",
+      "warning_message": "Verify opening status yourself before following anyone to another shop or tour."
+    },
+    {
+      "location_name": "Qutub Minar Entry",
+      "scam_type": "Unofficial guide bundle",
+      "risk_level": "low",
+      "warning_message": "Agree guide fees separately from entry tickets and ask for official ID."
+    },
+    {
+      "location_name": "Delhi Airport Arrivals",
+      "scam_type": "Fake prepaid taxi desk",
+      "risk_level": "high",
+      "warning_message": "Use official counters, app pickup zones, or verified hotel transport only."
     }
   ],
   "Jaipur": [
@@ -105,6 +141,24 @@
       "scam_type": "Taxi overcharging",
       "risk_level": "medium",
       "warning_message": "Negotiate the fare or use a trusted ride app before starting the trip."
+    },
+    {
+      "location_name": "Albert Hall Museum",
+      "scam_type": "Camera fee confusion",
+      "risk_level": "low",
+      "warning_message": "Check official ticket inclusions before paying extra camera charges."
+    },
+    {
+      "location_name": "Nahargarh Fort Road",
+      "scam_type": "Detour fare inflation",
+      "risk_level": "medium",
+      "warning_message": "Confirm route and fare before hill-road rides or sunset trips."
+    },
+    {
+      "location_name": "Jaipur Airport Arrivals",
+      "scam_type": "Unmetered airport taxi",
+      "risk_level": "medium",
+      "warning_message": "Use prepaid taxi counters or app pickup zones for airport rides."
     }
   ],
   "Mumbai": [
@@ -137,6 +191,24 @@
       "scam_type": "Bag distraction theft",
       "risk_level": "medium",
       "warning_message": "Do not leave bags unattended while taking photos or buying snacks."
+    },
+    {
+      "location_name": "Bandra Bandstand",
+      "scam_type": "Photo prop charge",
+      "risk_level": "low",
+      "warning_message": "Do not pose with props or animals unless the total price is agreed first."
+    },
+    {
+      "location_name": "Elephanta Ferry Gate",
+      "scam_type": "Unofficial package upgrade",
+      "risk_level": "medium",
+      "warning_message": "Buy ferry and cave tickets from official counters and compare package claims."
+    },
+    {
+      "location_name": "Mumbai Airport T2",
+      "scam_type": "Ride pickup confusion",
+      "risk_level": "medium",
+      "warning_message": "Follow official app pickup signs and avoid drivers claiming app cancellation."
     }
   ],
   "Bangalore": [
@@ -169,6 +241,24 @@
       "scam_type": "Inflated tourist price",
       "risk_level": "medium",
       "warning_message": "Compare shops and confirm the final price before payment."
+    },
+    {
+      "location_name": "Vidhana Soudha Area",
+      "scam_type": "Permit photo claim",
+      "risk_level": "low",
+      "warning_message": "Ignore unofficial demands for photo permits in public viewing areas."
+    },
+    {
+      "location_name": "Brigade Road",
+      "scam_type": "Nightlife entry scam",
+      "risk_level": "medium",
+      "warning_message": "Pay only at venue counters and avoid street promoters asking upfront fees."
+    },
+    {
+      "location_name": "Bangalore Airport Pickup Zone",
+      "scam_type": "Unofficial cab solicitation",
+      "risk_level": "high",
+      "warning_message": "Use airport taxi counters, official buses, or verified app pickup zones."
     }
   ]
 }

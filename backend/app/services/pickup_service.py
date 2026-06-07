@@ -12,7 +12,6 @@ from app.models.pickup_models import (
     PickupScoreBreakdown,
 )
 from app.models.route_models import Coordinates
-from app.services.ai_service import is_demo_mode_enabled
 
 
 GOOGLE_DIRECTIONS_URL = "https://maps.googleapis.com/maps/api/directions/json"
@@ -80,7 +79,7 @@ def get_json(url: str, params: dict[str, Any]) -> dict[str, Any]:
     encoded_params = urllib.parse.urlencode(params)
     request = urllib.request.Request(
         f"{url}?{encoded_params}",
-        headers={"User-Agent": "TouristShield/1.0"},
+        headers={"User-Agent": "Guardly/1.0"},
     )
     with urllib.request.urlopen(request, timeout=REQUEST_TIMEOUT_SECONDS) as response:
         return json.loads(response.read().decode("utf-8"))
@@ -201,22 +200,30 @@ def build_reason(candidate: PickupCandidate) -> str:
     return f"{strongest.capitalize()} with a short {candidate.walking_distance_m}m walk."
 
 
+def get_optimization_location(payload: PickupOptimizeRequest) -> Coordinates:
+    if payload.optimize_for == "destination" and payload.destination_location is not None:
+        return payload.destination_location
+
+    return payload.current_location
+
+
 def generate_pickup_candidates(payload: PickupOptimizeRequest) -> list[PickupCandidate]:
     api_key = get_google_api_key()
-    use_google = has_google_api_key() and not is_demo_mode_enabled()
+    use_google = has_google_api_key()
     candidates: list[PickupCandidate] = []
+    optimization_location = get_optimization_location(payload)
 
     for index, (radius_m, bearing, label) in enumerate(CANDIDATE_SEEDS, start=1):
-        raw_location = destination_point(payload.current_location, radius_m, bearing)
+        raw_location = destination_point(optimization_location, radius_m, bearing)
         snapped_location = snap_to_nearest_road(raw_location, api_key) if use_google else None
         location = snapped_location or raw_location
         walking_distance = (
-            get_walking_distance_m(payload.current_location, location, api_key)
+            get_walking_distance_m(optimization_location, location, api_key)
             if use_google
             else None
         )
         walking_distance_m = walking_distance or haversine_distance_m(
-            payload.current_location,
+            optimization_location,
             location,
         )
         nearby_hotspots = (
@@ -254,6 +261,7 @@ def generate_pickup_candidates(payload: PickupOptimizeRequest) -> list[PickupCan
 def optimize_pickup(payload: PickupOptimizeRequest) -> PickupOptimizeResponse:
     candidates = generate_pickup_candidates(payload)
     best_candidate = candidates[0]
+    optimization_location = get_optimization_location(payload)
 
     return PickupOptimizeResponse(
         best_pickup_location=best_candidate.name,
@@ -261,6 +269,9 @@ def optimize_pickup(payload: PickupOptimizeRequest) -> PickupOptimizeResponse:
         pickup_score=best_candidate.pickup_score,
         reason=best_candidate.reason,
         current_location=payload.current_location,
+        destination_location=payload.destination_location,
+        optimization_target=payload.optimize_for,
+        optimization_location=optimization_location,
         recommended_location=best_candidate.location,
         candidates=candidates,
         provider_fare_data_used=False,

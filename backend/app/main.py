@@ -20,7 +20,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="Tourist Shield API",
+    title="GUARDLY API",
     description="Stub backend for an AI-powered tourist safety platform.",
     version="0.1.0",
     lifespan=lifespan,

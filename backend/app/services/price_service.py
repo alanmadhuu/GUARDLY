@@ -10,11 +10,20 @@ def format_price_range(min_price: float, max_price: float) -> str:
     return f"{round(min_price)}-{round(max_price)}"
 
 
-def calculate_expected_range(price_record: dict[str, Any], distance_km: float) -> tuple[float, float]:
+def requires_distance(price_record: dict[str, Any]) -> bool:
+    return price_record["unit"] == "per km"
+
+
+def calculate_expected_range(price_record: dict[str, Any], distance_km: float | None) -> tuple[float, float]:
     min_price = float(price_record["min_inr"])
     max_price = float(price_record["max_inr"])
 
-    if price_record["unit"] == "per km":
+    if requires_distance(price_record):
+        if distance_km is None:
+            raise HTTPException(
+                status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+                detail="Distance is required for per-kilometer transport categories.",
+            )
         return min_price * distance_km, max_price * distance_km
 
     return min_price, max_price
@@ -39,6 +48,17 @@ def calculate_overcharge_percentage(quoted_price: float, expected_max_price: flo
 
 def calculate_money_saved(quoted_price: float, recommended_price: float) -> int:
     return round(max(0, quoted_price - recommended_price))
+
+
+def build_calculation_note(price_record: dict[str, Any], distance_km: float | None) -> str:
+    min_price = round(float(price_record["min_inr"]))
+    max_price = round(float(price_record["max_inr"]))
+    unit = price_record["unit"]
+
+    if requires_distance(price_record):
+        return f"Expected range is INR {min_price}-{max_price} per km x {distance_km:g} km."
+
+    return f"Expected range is INR {min_price}-{max_price} for {unit}; distance is not used."
 
 
 def build_price_message(risk_level: str) -> str:
@@ -78,6 +98,7 @@ def check_price(
         city_prices[payload.category],
         payload.distance_km,
     )
+    price_record = city_prices[payload.category]
     risk_level = calculate_price_risk(payload.quoted_price, expected_max_price)
 
     return PriceCheckResponse(
@@ -92,4 +113,5 @@ def check_price(
         ),
         money_saved=calculate_money_saved(payload.quoted_price, expected_max_price),
         message=build_price_message(risk_level),
+        calculation_note=build_calculation_note(price_record, payload.distance_km),
     )
