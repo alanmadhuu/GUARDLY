@@ -2,6 +2,8 @@ import type { Coordinates } from "./route";
 
 export type PickupOptimizeRequest = {
   current_location: Coordinates;
+  destination_location?: Coordinates;
+  optimize_for: "current_location" | "destination";
 };
 
 export type PickupScoreBreakdown = {
@@ -29,6 +31,9 @@ export type PickupOptimizeResponse = {
   pickup_score: number;
   reason: string;
   current_location: Coordinates;
+  destination_location?: Coordinates;
+  optimization_target: string;
+  optimization_location: Coordinates;
   recommended_location: Coordinates;
   candidates: PickupCandidate[];
   provider_fare_data_used: boolean;

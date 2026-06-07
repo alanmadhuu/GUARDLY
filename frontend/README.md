@@ -1,6 +1,6 @@
-# Tourist Shield Frontend
+# GUARDLY Frontend
 
-React TypeScript MVP for the Tourist Shield FastAPI backend.
+React TypeScript MVP for the GUARDLY FastAPI backend.
 
 ## File Structure
 

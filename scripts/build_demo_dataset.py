@@ -1,4 +1,4 @@
-"""Build one-time local demo datasets for Tourist Shield.
+"""Build one-time local demo datasets for GUARDLY.
 
 The script attempts lightweight collection from free public sources:
 - OpenStreetMap Overpass API for attractions and police stations.
@@ -33,7 +33,7 @@ from typing import Any
 CITIES = ["Kochi", "Delhi", "Jaipur", "Mumbai", "Bangalore"]
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT_DIR = REPO_ROOT / "data"
-USER_AGENT = "TouristShieldHackathonDemo/1.0 (local data generation)"
+USER_AGENT = "GuardlyHackathonDemo/1.0 (local data generation)"
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 MIN_ATTRACTIONS_PER_CITY = 8
 MIN_POLICE_PER_CITY = 4
@@ -631,7 +631,7 @@ def write_dataset(dataset: dict[str, Any], output_dir: Path, skip_app_sync: bool
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Build local Tourist Shield demo JSON datasets.")
+    parser = argparse.ArgumentParser(description="Build local GUARDLY demo JSON datasets.")
     parser.add_argument(
         "--output-dir",
         type=Path,
@@ -662,7 +662,7 @@ def main() -> int:
     dataset = build_dataset(offline=args.offline, timeout=args.timeout)
     write_dataset(dataset, args.output_dir, args.skip_app_sync)
 
-    print("Tourist Shield demo dataset generated.")
+    print("GUARDLY demo dataset generated.")
     print(f"Canonical output: {args.output_dir.resolve()}")
     print(f"Attractions: {len(dataset['attractions'])}")
     print(f"Ticket price records: {len(dataset['ticket_prices'])}")

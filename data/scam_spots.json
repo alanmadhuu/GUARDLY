@@ -1,405 +1,264 @@
-[
-  {
-    "id": "bangalore-bangalore-palace",
-    "city": "Bangalore",
-    "location_name": "Bangalore Palace",
-    "scam_type": "Unofficial guide",
-    "risk_level": "LOW",
-    "warning_message": "Confirm guide identity and total cost before accepting help.",
-    "position": {
-      "lat": 12.9987,
-      "lng": 77.592
+{
+  "Kochi": [
+    {
+      "location_name": "Fort Kochi Beach",
+      "scam_type": "Overpriced souvenirs",
+      "risk_level": "medium",
+      "warning_message": "Compare prices before buying beachside souvenirs and avoid pressure sales."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "bangalore-commercial-street",
-    "city": "Bangalore",
-    "location_name": "Commercial Street",
-    "scam_type": "Inflated tourist price",
-    "risk_level": "MEDIUM",
-    "warning_message": "Compare shops and confirm the final price before payment.",
-    "position": {
-      "lat": 12.9822,
-      "lng": 77.6083
+    {
+      "location_name": "Chinese Fishing Nets",
+      "scam_type": "Photo fee pressure",
+      "risk_level": "low",
+      "warning_message": "Agree on any photo or demonstration fee before participating."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "bangalore-kempegowda-bus-station",
-    "city": "Bangalore",
-    "location_name": "Kempegowda Bus Station",
-    "scam_type": "Taxi overcharging",
-    "risk_level": "MEDIUM",
-    "warning_message": "Confirm the fare or use a trusted app before leaving the station.",
-    "position": {
-      "lat": 12.9779,
-      "lng": 77.5727
+    {
+      "location_name": "Jew Town",
+      "scam_type": "Inflated antique prices",
+      "risk_level": "medium",
+      "warning_message": "Ask for authenticity proof and avoid buying expensive antiques impulsively."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "bangalore-kr-market",
-    "city": "Bangalore",
-    "location_name": "KR Market",
-    "scam_type": "Pickpocket distraction",
-    "risk_level": "HIGH",
-    "warning_message": "Keep valuables in front pockets or zipped bags in dense crowds.",
-    "position": {
-      "lat": 12.9615,
-      "lng": 77.5761
+    {
+      "location_name": "Ernakulam Railway Station",
+      "scam_type": "Fake porter charge",
+      "risk_level": "medium",
+      "warning_message": "Use official porters and confirm the fee before handing over luggage."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "bangalore-majestic-bus-station",
-    "city": "Bangalore",
-    "location_name": "Majestic Bus Station",
-    "scam_type": "Fake bus assistance",
-    "risk_level": "MEDIUM",
-    "warning_message": "Verify bus platforms through official displays or staff.",
-    "position": {
-      "lat": 12.9779,
-      "lng": 77.5727
+    {
+      "location_name": "Marine Drive",
+      "scam_type": "Unofficial boat ride",
+      "risk_level": "high",
+      "warning_message": "Book boat rides only through visible counters or trusted operators."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "bangalore-mg-road",
-    "city": "Bangalore",
-    "location_name": "MG Road",
-    "scam_type": "Overpriced pub crawl offer",
-    "risk_level": "MEDIUM",
-    "warning_message": "Avoid paying strangers upfront for nightlife packages.",
-    "position": {
-      "lat": 12.9756,
-      "lng": 77.6067
+    {
+      "location_name": "Mattancherry Palace",
+      "scam_type": "Unofficial ticket helper",
+      "risk_level": "low",
+      "warning_message": "Buy entry tickets only at the official counter and ignore shortcut offers."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "delhi-chandni-chowk",
-    "city": "Delhi",
-    "location_name": "Chandni Chowk",
-    "scam_type": "Pickpocket distraction",
-    "risk_level": "HIGH",
-    "warning_message": "Keep bags closed and phones secure in crowded lanes.",
-    "position": {
-      "lat": 28.6506,
-      "lng": 77.2303
+    {
+      "location_name": "Vypeen Ferry Terminal",
+      "scam_type": "Private ferry overcharge",
+      "risk_level": "medium",
+      "warning_message": "Check posted ferry fares before accepting private boat offers."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "delhi-connaught-place",
-    "city": "Delhi",
-    "location_name": "Connaught Place",
-    "scam_type": "Forced shopping detour",
-    "risk_level": "MEDIUM",
-    "warning_message": "Be cautious if a stranger redirects you to a specific travel shop or emporium.",
-    "position": {
-      "lat": 28.6315,
-      "lng": 77.2167
+    {
+      "location_name": "Lulu Mall Taxi Bay",
+      "scam_type": "Taxi pickup surcharge",
+      "risk_level": "low",
+      "warning_message": "Confirm app pickup point and fare before entering a cab."
+    }
+  ],
+  "Delhi": [
+    {
+      "location_name": "New Delhi Railway Station",
+      "scam_type": "Fake ticket office",
+      "risk_level": "high",
+      "warning_message": "Ignore claims that your train is cancelled and use official railway counters or apps."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "delhi-india-gate",
-    "city": "Delhi",
-    "location_name": "India Gate",
-    "scam_type": "Overpriced photography",
-    "risk_level": "LOW",
-    "warning_message": "Set the price clearly before accepting printed photos or instant pictures.",
-    "position": {
-      "lat": 28.6129,
-      "lng": 77.2295
+    {
+      "location_name": "Connaught Place",
+      "scam_type": "Forced shopping detour",
+      "risk_level": "medium",
+      "warning_message": "Be cautious if a stranger redirects you to a specific travel shop or emporium."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "delhi-new-delhi-railway-station",
-    "city": "Delhi",
-    "location_name": "New Delhi Railway Station",
-    "scam_type": "Fake ticket office",
-    "risk_level": "HIGH",
-    "warning_message": "Ignore claims that your train is cancelled and use official railway counters or apps.",
-    "position": {
-      "lat": 28.6425,
-      "lng": 77.2195
+    {
+      "location_name": "Paharganj Main Bazaar",
+      "scam_type": "Hotel commission scam",
+      "risk_level": "medium",
+      "warning_message": "Confirm hotel bookings directly and avoid unsolicited agents."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "delhi-paharganj-main-bazaar",
-    "city": "Delhi",
-    "location_name": "Paharganj Main Bazaar",
-    "scam_type": "Hotel commission scam",
-    "risk_level": "MEDIUM",
-    "warning_message": "Confirm hotel bookings directly and avoid unsolicited agents.",
-    "position": {
-      "lat": 28.6441,
-      "lng": 77.2141
+    {
+      "location_name": "India Gate",
+      "scam_type": "Overpriced photography",
+      "risk_level": "low",
+      "warning_message": "Set the price clearly before accepting printed photos or instant pictures."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "delhi-red-fort-entry",
-    "city": "Delhi",
-    "location_name": "Red Fort Entry",
-    "scam_type": "Unofficial guide pressure",
-    "risk_level": "MEDIUM",
-    "warning_message": "Use licensed guides and verify ticket counters before paying.",
-    "position": {
-      "lat": 28.6562,
-      "lng": 77.241
+    {
+      "location_name": "Chandni Chowk",
+      "scam_type": "Pickpocket distraction",
+      "risk_level": "high",
+      "warning_message": "Keep bags closed and phones secure in crowded lanes."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "jaipur-amber-fort-parking-area",
-    "city": "Jaipur",
-    "location_name": "Amber Fort Parking Area",
-    "scam_type": "Inflated elephant or jeep ride",
-    "risk_level": "MEDIUM",
-    "warning_message": "Check official rates before agreeing to rides up to the fort.",
-    "position": {
-      "lat": 26.9855,
-      "lng": 75.8513
+    {
+      "location_name": "Red Fort Gate",
+      "scam_type": "Closed monument claim",
+      "risk_level": "medium",
+      "warning_message": "Verify opening status yourself before following anyone to another shop or tour."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "jaipur-bapu-bazaar",
-    "city": "Jaipur",
-    "location_name": "Bapu Bazaar",
-    "scam_type": "Aggressive bargaining pressure",
-    "risk_level": "MEDIUM",
-    "warning_message": "Walk away if a shopkeeper pressures you or changes the agreed price.",
-    "position": {
-      "lat": 26.9176,
-      "lng": 75.8207
+    {
+      "location_name": "Qutub Minar Entry",
+      "scam_type": "Unofficial guide bundle",
+      "risk_level": "low",
+      "warning_message": "Agree guide fees separately from entry tickets and ask for official ID."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "jaipur-city-palace-gate",
-    "city": "Jaipur",
-    "location_name": "City Palace Gate",
-    "scam_type": "Ticket markup",
-    "risk_level": "LOW",
-    "warning_message": "Buy tickets only from official counters or official online links.",
-    "position": {
-      "lat": 26.9258,
-      "lng": 75.8237
+    {
+      "location_name": "Delhi Airport Arrivals",
+      "scam_type": "Fake prepaid taxi desk",
+      "risk_level": "high",
+      "warning_message": "Use official counters, app pickup zones, or verified hotel transport only."
+    }
+  ],
+  "Jaipur": [
+    {
+      "location_name": "Hawa Mahal",
+      "scam_type": "Unofficial guide",
+      "risk_level": "medium",
+      "warning_message": "Use licensed guides and confirm the total fee before starting."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "jaipur-hawa-mahal",
-    "city": "Jaipur",
-    "location_name": "Hawa Mahal",
-    "scam_type": "Unofficial guide",
-    "risk_level": "MEDIUM",
-    "warning_message": "Use licensed guides and confirm the total fee before starting.",
-    "position": {
-      "lat": 26.9239,
-      "lng": 75.8267
+    {
+      "location_name": "Amber Fort Parking Area",
+      "scam_type": "Inflated elephant or jeep ride",
+      "risk_level": "medium",
+      "warning_message": "Check official rates before agreeing to rides up to the fort."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "jaipur-jaipur-railway-station",
-    "city": "Jaipur",
-    "location_name": "Jaipur Railway Station",
-    "scam_type": "Fake guides",
-    "risk_level": "HIGH",
-    "warning_message": "Unauthorized guides may overcharge tourists or redirect them to commission shops.",
-    "position": {
-      "lat": 26.9196,
-      "lng": 75.7885
+    {
+      "location_name": "Johari Bazaar",
+      "scam_type": "Fake gemstone sale",
+      "risk_level": "high",
+      "warning_message": "Avoid high-value gem purchases without certification and independent verification."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "jaipur-jaipur-railway-station-2",
-    "city": "Jaipur",
-    "location_name": "Jaipur Railway Station",
-    "scam_type": "Taxi overcharging",
-    "risk_level": "MEDIUM",
-    "warning_message": "Negotiate the fare or use a trusted ride app before starting the trip.",
-    "position": {
-      "lat": 26.9196,
-      "lng": 75.7885
+    {
+      "location_name": "City Palace Gate",
+      "scam_type": "Ticket markup",
+      "risk_level": "low",
+      "warning_message": "Buy tickets only from official counters or official online links."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "jaipur-johari-bazaar",
-    "city": "Jaipur",
-    "location_name": "Johari Bazaar",
-    "scam_type": "Fake gemstone sale",
-    "risk_level": "HIGH",
-    "warning_message": "Avoid high-value gem purchases without certification and independent verification.",
-    "position": {
-      "lat": 26.9216,
-      "lng": 75.8266
+    {
+      "location_name": "Bapu Bazaar",
+      "scam_type": "Aggressive bargaining pressure",
+      "risk_level": "medium",
+      "warning_message": "Walk away if a shopkeeper pressures you or changes the agreed price."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "kochi-chinese-fishing-nets",
-    "city": "Kochi",
-    "location_name": "Chinese Fishing Nets",
-    "scam_type": "Photo fee pressure",
-    "risk_level": "LOW",
-    "warning_message": "Agree on any photo or demonstration fee before participating.",
-    "position": {
-      "lat": 9.9673,
-      "lng": 76.2429
+    {
+      "location_name": "Jaipur Railway Station",
+      "scam_type": "Fake guides",
+      "risk_level": "high",
+      "warning_message": "Unauthorized guides may overcharge tourists or redirect them to commission shops."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "kochi-ernakulam-railway-station",
-    "city": "Kochi",
-    "location_name": "Ernakulam Railway Station",
-    "scam_type": "Fake porter charge",
-    "risk_level": "MEDIUM",
-    "warning_message": "Use official porters and confirm the fee before handing over luggage.",
-    "position": {
-      "lat": 9.9699,
-      "lng": 76.2918
+    {
+      "location_name": "Jaipur Railway Station",
+      "scam_type": "Taxi overcharging",
+      "risk_level": "medium",
+      "warning_message": "Negotiate the fare or use a trusted ride app before starting the trip."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "kochi-fort-kochi-beach",
-    "city": "Kochi",
-    "location_name": "Fort Kochi Beach",
-    "scam_type": "Overpriced souvenirs",
-    "risk_level": "MEDIUM",
-    "warning_message": "Compare prices before buying beachside souvenirs and avoid pressure sales.",
-    "position": {
-      "lat": 9.9656,
-      "lng": 76.2422
+    {
+      "location_name": "Albert Hall Museum",
+      "scam_type": "Camera fee confusion",
+      "risk_level": "low",
+      "warning_message": "Check official ticket inclusions before paying extra camera charges."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "kochi-fort-kochi-ferry-terminal",
-    "city": "Kochi",
-    "location_name": "Fort Kochi Ferry Terminal",
-    "scam_type": "Unofficial ferry helper",
-    "risk_level": "MEDIUM",
-    "warning_message": "Use posted ferry counters and avoid paying intermediaries.",
-    "position": {
-      "lat": 9.9647,
-      "lng": 76.2427
+    {
+      "location_name": "Nahargarh Fort Road",
+      "scam_type": "Detour fare inflation",
+      "risk_level": "medium",
+      "warning_message": "Confirm route and fare before hill-road rides or sunset trips."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "kochi-jew-town",
-    "city": "Kochi",
-    "location_name": "Jew Town",
-    "scam_type": "Inflated antique prices",
-    "risk_level": "MEDIUM",
-    "warning_message": "Ask for authenticity proof and avoid buying expensive antiques impulsively.",
-    "position": {
-      "lat": 9.9576,
-      "lng": 76.2595
+    {
+      "location_name": "Jaipur Airport Arrivals",
+      "scam_type": "Unmetered airport taxi",
+      "risk_level": "medium",
+      "warning_message": "Use prepaid taxi counters or app pickup zones for airport rides."
+    }
+  ],
+  "Mumbai": [
+    {
+      "location_name": "Gateway of India",
+      "scam_type": "Unofficial ferry ticket",
+      "risk_level": "high",
+      "warning_message": "Use official ferry counters and avoid buying tickets from roaming agents."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "kochi-marine-drive",
-    "city": "Kochi",
-    "location_name": "Marine Drive",
-    "scam_type": "Unofficial boat ride",
-    "risk_level": "HIGH",
-    "warning_message": "Book boat rides only through visible counters or trusted operators.",
-    "position": {
-      "lat": 9.9816,
-      "lng": 76.2762
+    {
+      "location_name": "Colaba Causeway",
+      "scam_type": "Counterfeit goods",
+      "risk_level": "medium",
+      "warning_message": "Assume branded goods on street stalls may be counterfeit."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "mumbai-chhatrapati-shivaji-maharaj-terminus",
-    "city": "Mumbai",
-    "location_name": "Chhatrapati Shivaji Maharaj Terminus",
-    "scam_type": "Fake taxi helper",
-    "risk_level": "MEDIUM",
-    "warning_message": "Use prepaid taxi counters or trusted ride-hailing pickup points.",
-    "position": {
-      "lat": 18.9398,
-      "lng": 72.8355
+    {
+      "location_name": "Chhatrapati Shivaji Maharaj Terminus",
+      "scam_type": "Fake taxi helper",
+      "risk_level": "medium",
+      "warning_message": "Use prepaid taxi counters or trusted ride-hailing pickup points."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "mumbai-colaba-causeway",
-    "city": "Mumbai",
-    "location_name": "Colaba Causeway",
-    "scam_type": "Counterfeit goods",
-    "risk_level": "MEDIUM",
-    "warning_message": "Assume branded goods on street stalls may be counterfeit.",
-    "position": {
-      "lat": 18.9154,
-      "lng": 72.8267
+    {
+      "location_name": "Marine Drive",
+      "scam_type": "Overpriced street snack",
+      "risk_level": "low",
+      "warning_message": "Check prices before ordering from mobile vendors."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "mumbai-elephanta-ferry-boarding",
-    "city": "Mumbai",
-    "location_name": "Elephanta Ferry Boarding",
-    "scam_type": "Inflated boat package",
-    "risk_level": "HIGH",
-    "warning_message": "Confirm official ferry prices and avoid bundled tour pressure.",
-    "position": {
-      "lat": 18.9217,
-      "lng": 72.8346
+    {
+      "location_name": "Juhu Beach",
+      "scam_type": "Bag distraction theft",
+      "risk_level": "medium",
+      "warning_message": "Do not leave bags unattended while taking photos or buying snacks."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "mumbai-gateway-of-india",
-    "city": "Mumbai",
-    "location_name": "Gateway of India",
-    "scam_type": "Unofficial ferry ticket",
-    "risk_level": "HIGH",
-    "warning_message": "Use official ferry counters and avoid buying tickets from roaming agents.",
-    "position": {
-      "lat": 18.922,
-      "lng": 72.8347
+    {
+      "location_name": "Bandra Bandstand",
+      "scam_type": "Photo prop charge",
+      "risk_level": "low",
+      "warning_message": "Do not pose with props or animals unless the total price is agreed first."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "mumbai-juhu-beach",
-    "city": "Mumbai",
-    "location_name": "Juhu Beach",
-    "scam_type": "Bag distraction theft",
-    "risk_level": "MEDIUM",
-    "warning_message": "Do not leave bags unattended while taking photos or buying snacks.",
-    "position": {
-      "lat": 19.0988,
-      "lng": 72.8267
+    {
+      "location_name": "Elephanta Ferry Gate",
+      "scam_type": "Unofficial package upgrade",
+      "risk_level": "medium",
+      "warning_message": "Buy ferry and cave tickets from official counters and compare package claims."
     },
-    "source": "static_fallback"
-  },
-  {
-    "id": "mumbai-marine-drive",
-    "city": "Mumbai",
-    "location_name": "Marine Drive",
-    "scam_type": "Overpriced street snack",
-    "risk_level": "LOW",
-    "warning_message": "Check prices before ordering from mobile vendors.",
-    "position": {
-      "lat": 18.9432,
-      "lng": 72.8234
+    {
+      "location_name": "Mumbai Airport T2",
+      "scam_type": "Ride pickup confusion",
+      "risk_level": "medium",
+      "warning_message": "Follow official app pickup signs and avoid drivers claiming app cancellation."
+    }
+  ],
+  "Bangalore": [
+    {
+      "location_name": "Majestic Bus Station",
+      "scam_type": "Fake bus assistance",
+      "risk_level": "medium",
+      "warning_message": "Verify bus platforms through official displays or staff."
     },
-    "source": "static_fallback"
-  }
-]
+    {
+      "location_name": "KR Market",
+      "scam_type": "Pickpocket distraction",
+      "risk_level": "high",
+      "warning_message": "Keep valuables in front pockets or zipped bags in dense crowds."
+    },
+    {
+      "location_name": "MG Road",
+      "scam_type": "Overpriced pub crawl offer",
+      "risk_level": "medium",
+      "warning_message": "Avoid paying strangers upfront for nightlife packages."
+    },
+    {
+      "location_name": "Bangalore Palace",
+      "scam_type": "Unofficial guide",
+      "risk_level": "low",
+      "warning_message": "Confirm guide identity and total cost before accepting help."
+    },
+    {
+      "location_name": "Commercial Street",
+      "scam_type": "Inflated tourist price",
+      "risk_level": "medium",
+      "warning_message": "Compare shops and confirm the final price before payment."
+    },
+    {
+      "location_name": "Vidhana Soudha Area",
+      "scam_type": "Permit photo claim",
+      "risk_level": "low",
+      "warning_message": "Ignore unofficial demands for photo permits in public viewing areas."
+    },
+    {
+      "location_name": "Brigade Road",
+      "scam_type": "Nightlife entry scam",
+      "risk_level": "medium",
+      "warning_message": "Pay only at venue counters and avoid street promoters asking upfront fees."
+    },
+    {
+      "location_name": "Bangalore Airport Pickup Zone",
+      "scam_type": "Unofficial cab solicitation",
+      "risk_level": "high",
+      "warning_message": "Use airport taxi counters, official buses, or verified app pickup zones."
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { BadgeDollarSign, CarFront, LayoutDashboard, Map, MapPinned } from "lucide-react";
+import { BadgeDollarSign, CarFront, LayoutDashboard, Map, MapPinned, ShieldCheck } from "lucide-react";
 import { ComponentType, useState } from "react";
 import Dashboard from "./components/Dashboard";
 import PickupOptimizer from "./components/PickupOptimizer";
@@ -46,16 +46,18 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<TabKey>("dashboard");
 
   return (
-    <main className="min-h-screen bg-slate-50">
-      <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col px-4 py-6 sm:px-6 lg:px-8">
-        <header className="mb-6 flex flex-col gap-2 border-b border-stone-200 pb-5">
-          <p className="text-sm font-semibold uppercase text-teal-700">Tourist Shield</p>
-          <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <h1 className="text-3xl font-bold text-stone-950">Safety Dashboard</h1>
-            </div>
-            <div className="rounded-md border border-stone-200 bg-white px-3 py-2 text-xs font-medium text-stone-600">
-              API: {import.meta.env.VITE_API_BASE_URL ?? "http://127.0.0.1:8000"}
+    <main className="min-h-screen bg-[#f4f7f5]">
+      <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col px-4 py-5 sm:px-6 lg:px-8">
+        <header className="mb-5 rounded-lg border border-stone-200 bg-white px-4 py-4 shadow-sm sm:px-5">
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-teal-700 text-white shadow-sm">
+                <ShieldCheck className="h-6 w-6" />
+              </div>
+              <div>
+                <p className="text-xs font-bold uppercase text-teal-700">GUARDLY</p>
+                <h1 className="text-2xl font-bold text-stone-950 sm:text-3xl">Travel Safety Command Center</h1>
+              </div>
             </div>
           </div>
         </header>
@@ -74,7 +76,7 @@ export default function App() {
                 className={`flex h-11 items-center justify-center gap-2 rounded-md px-3 text-sm font-semibold transition ${
                   isActive
                     ? "bg-teal-700 text-white shadow-sm"
-                    : "text-stone-700 hover:bg-stone-100"
+                    : "text-stone-700 hover:bg-stone-50"
                 }`}
                 key={tab.key}
                 onClick={() => setActiveTab(tab.key)}

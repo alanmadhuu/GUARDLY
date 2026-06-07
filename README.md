@@ -1,12 +1,12 @@
-# Tourist Shield
+# GUARDLY
 
 ## Problem Statement
 
-Tourists often overpay for transport, accept unsafe route deviations, or enter scam-prone areas because they lack local context. Tourist Shield gives quick, local-data-backed safety checks for common travel risks.
+Tourists often overpay for transport, accept unsafe route deviations, or enter scam-prone areas because they lack local context. GUARDLY gives quick, local-data-backed safety checks for common travel risks.
 
 ## Solution
 
-Tourist Shield combines price analysis, route deviation detection, location warnings, LangGraph orchestration, map visualization, and optional Groq explanations into a demo-ready web app. The system is designed to keep working from local JSON data when external AI services are unavailable.
+GUARDLY combines price analysis, route deviation detection, location warnings, LangGraph orchestration, map visualization, and optional Groq explanations into a demo-ready web app. The system is designed to keep working from local JSON data when external AI services are unavailable.
 
 ## Features
 

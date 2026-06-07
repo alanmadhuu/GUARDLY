@@ -8,6 +8,9 @@ vite.err.log
 
 # Python
 backend/.venv/
+backend/.venv.broken/
+backend/.python312/
+backend/.installers/
 .venv/
 __pycache__/
 **pycache**/

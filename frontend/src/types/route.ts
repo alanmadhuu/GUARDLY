@@ -16,4 +16,15 @@ export type RouteCheckResponse = {
   risk_level: string;
   route_deviation_detected: boolean;
   message: string;
+  traffic_level: string;
+  traffic_delay_minutes: number;
+  traffic_adjustment_applied: boolean;
+};
+
+export type RouteMapMetrics = {
+  routeLengthKm: number;
+  etaText: string;
+  etaMinutes: number;
+  distanceRemainingKm: number;
+  currentDeviationDistanceKm: number;
 };

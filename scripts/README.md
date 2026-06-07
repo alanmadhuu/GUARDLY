@@ -1,4 +1,4 @@
-# Tourist Shield Demo Dataset
+# GUARDLY Demo Dataset
 
 `build_demo_dataset.py` is a one-time generator for local hackathon demo data.
 It does not create a continuous pipeline, database, scheduler, or backend service.

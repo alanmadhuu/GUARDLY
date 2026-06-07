@@ -1,8 +1,10 @@
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
-import { AlertTriangle, Loader2 } from "lucide-react";
+import { GoogleMap, MarkerF, useJsApiLoader } from "@react-google-maps/api";
+import { AlertTriangle, Flag, LocateFixed, Loader2, Route as RouteIcon } from "lucide-react";
+import type { ComponentType } from "react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { scamHotspots, type ScamHotspot } from "../data/scam_spots";
-import type { Coordinates } from "../types/route";
+import { googleMapsLibraries } from "../services/googleMaps";
+import type { Coordinates, RouteMapMetrics } from "../types/route";
 import AreaWarningLookup from "./AreaWarningLookup";
 import RiskPanel from "./RiskPanel";
 import RouteLayer from "./RouteLayer";
@@ -14,12 +16,17 @@ type TouristMapProps = {
     destination: Coordinates;
     riskLevel?: string;
   };
+  actualDistanceKm?: number;
   compact?: boolean;
+  currentLocation?: Coordinates;
+  onRouteMetricsChange?: (metrics: RouteMapMetrics | null) => void;
+  showDeviation?: boolean;
+  showRouteControls?: boolean;
 };
 
 const defaultCenter = {
-  lat: 22.9734,
-  lng: 78.6569,
+  lat: 26.9124,
+  lng: 75.7873,
 };
 
 const mapContainerStyle = {
@@ -39,15 +46,46 @@ function isHighRisk(riskLevel?: string) {
   return riskLevel?.toUpperCase() === "HIGH";
 }
 
-export default function TouristMap({ route, compact = false }: TouristMapProps) {
+function MapControlButton({
+  children,
+  icon: Icon,
+  onClick,
+}: {
+  children: string;
+  icon: ComponentType<{ className?: string }>;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      className="inline-flex h-9 items-center justify-center gap-2 rounded-md border border-stone-200 bg-white px-3 text-xs font-semibold text-stone-700 shadow-sm transition hover:bg-stone-50"
+      onClick={onClick}
+      type="button"
+    >
+      <Icon className="h-4 w-4" />
+      {children}
+    </button>
+  );
+}
+
+export default function TouristMap({
+  actualDistanceKm,
+  compact = false,
+  currentLocation,
+  onRouteMetricsChange,
+  route,
+  showDeviation = false,
+  showRouteControls = false,
+}: TouristMapProps) {
   const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
   const mapRef = useRef<google.maps.Map | null>(null);
   const [selectedCity, setSelectedCity] = useState("All");
   const [selectedHotspot, setSelectedHotspot] = useState<ScamHotspot | null>(scamHotspots[0] ?? null);
+  const [routePath, setRoutePath] = useState<Coordinates[]>([]);
 
   const { isLoaded, loadError } = useJsApiLoader({
-    id: "tourist-shield-google-maps",
+    id: "guardly-google-maps",
     googleMapsApiKey: apiKey || "",
+    libraries: googleMapsLibraries,
   });
 
   const visibleHotspots = useMemo(() => {
@@ -57,6 +95,26 @@ export default function TouristMap({ route, compact = false }: TouristMapProps) 
 
     return scamHotspots.filter((hotspot) => hotspot.city === selectedCity);
   }, [selectedCity]);
+
+  const fitRouteBounds = useCallback(() => {
+    if (!mapRef.current || !window.google || !route) {
+      return;
+    }
+
+    const bounds = new window.google.maps.LatLngBounds();
+    const points = routePath.length > 0 ? routePath : [route.origin, route.destination];
+    points.forEach((point) => bounds.extend(point));
+    bounds.extend(route.origin);
+    bounds.extend(route.destination);
+
+    if (currentLocation) {
+      bounds.extend(currentLocation);
+    }
+
+    if (!bounds.isEmpty()) {
+      mapRef.current.fitBounds(bounds, 64);
+    }
+  }, [currentLocation, route, routePath]);
 
   const fitMapBounds = useCallback(() => {
     if (!mapRef.current || !window.google) {
@@ -78,15 +136,48 @@ export default function TouristMap({ route, compact = false }: TouristMapProps) 
 
   useEffect(() => {
     if (isLoaded) {
-      fitMapBounds();
+      if (route) {
+        fitRouteBounds();
+      } else {
+        fitMapBounds();
+      }
     }
-  }, [fitMapBounds, isLoaded]);
+  }, [fitMapBounds, fitRouteBounds, isLoaded, route]);
 
   useEffect(() => {
     if (selectedCity !== "All" && selectedHotspot?.city !== selectedCity) {
       setSelectedHotspot(visibleHotspots[0] ?? null);
     }
   }, [selectedCity, selectedHotspot?.city, visibleHotspots]);
+
+  const centerOnUser = useCallback(() => {
+    if (!mapRef.current || !currentLocation) {
+      return;
+    }
+
+    mapRef.current.panTo(currentLocation);
+    mapRef.current.setZoom(15);
+  }, [currentLocation]);
+
+  const centerOnDestination = useCallback(() => {
+    if (!mapRef.current || !route) {
+      return;
+    }
+
+    mapRef.current.panTo(route.destination);
+    mapRef.current.setZoom(15);
+  }, [route]);
+
+  const handleRouteMetricsChange = useCallback(
+    (metrics: RouteMapMetrics | null) => {
+      onRouteMetricsChange?.(metrics);
+    },
+    [onRouteMetricsChange],
+  );
+
+  const handleRoutePathChange = useCallback((path: Coordinates[]) => {
+    setRoutePath(path);
+  }, []);
 
   if (!apiKey) {
     return (
@@ -158,8 +249,22 @@ export default function TouristMap({ route, compact = false }: TouristMapProps) 
 
         <div className={`${compact ? "h-[420px]" : "h-[620px]"} relative overflow-hidden rounded-lg border border-stone-200 bg-stone-100 shadow-sm`}>
           {isHighRisk(route?.riskLevel) ? (
-            <div className="absolute left-4 right-4 top-4 z-10 rounded-md border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-900 shadow-sm">
+            <div className={`absolute left-4 right-4 z-10 rounded-md border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-900 shadow-sm ${showRouteControls ? "top-16" : "top-4"}`}>
               High route risk detected. Confirm the path, ask about detours, and move to a public area if needed.
+            </div>
+          ) : null}
+
+          {showRouteControls && route ? (
+            <div className="absolute left-3 right-3 top-3 z-10 flex flex-wrap gap-2 sm:left-auto">
+              <MapControlButton icon={RouteIcon} onClick={fitRouteBounds}>
+                Fit Route
+              </MapControlButton>
+              <MapControlButton icon={LocateFixed} onClick={centerOnUser}>
+                Center on User
+              </MapControlButton>
+              <MapControlButton icon={Flag} onClick={centerOnDestination}>
+                Center on Destination
+              </MapControlButton>
             </div>
           ) : null}
 
@@ -183,9 +288,29 @@ export default function TouristMap({ route, compact = false }: TouristMapProps) 
             />
             {route ? (
               <RouteLayer
+                actualDistanceKm={actualDistanceKm}
+                currentLocation={currentLocation}
                 destination={route.destination}
+                onMetricsChange={handleRouteMetricsChange}
+                onPathChange={handleRoutePathChange}
                 origin={route.origin}
                 riskLevel={route.riskLevel}
+                showDeviation={showDeviation}
+              />
+            ) : null}
+            {currentLocation ? (
+              <MarkerF
+                icon={{
+                  fillColor: "#0f766e",
+                  fillOpacity: 1,
+                  path: window.google.maps.SymbolPath.CIRCLE,
+                  scale: 8,
+                  strokeColor: "#ffffff",
+                  strokeWeight: 3,
+                }}
+                position={currentLocation}
+                title="Current location"
+                zIndex={20}
               />
             ) : null}
           </GoogleMap>

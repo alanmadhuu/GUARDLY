@@ -2,7 +2,7 @@ export type PriceCheckRequest = {
   city: string;
   category: string;
   quoted_price: number;
-  distance_km: number;
+  distance_km?: number;
 };
 
 export type PriceCheckResponse = {
@@ -14,4 +14,5 @@ export type PriceCheckResponse = {
   overcharge_percentage: number;
   money_saved: number;
   message: string;
+  calculation_note: string;
 };

@@ -118,7 +118,7 @@ function MetricCard({
   };
 
   return (
-    <section className="rounded-lg border border-stone-200 bg-white p-4 shadow-sm">
+    <section className="rounded-lg border border-stone-200 bg-white p-4 shadow-sm transition hover:border-stone-300">
       <div className="flex items-start justify-between gap-3">
         <div>
           <p className="text-xs font-semibold uppercase text-stone-500">{label}</p>
@@ -180,10 +180,10 @@ export default function Dashboard({ onNavigate }: DashboardProps) {
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-teal-200 bg-teal-50 px-3 py-1 text-xs font-semibold uppercase text-teal-800">
                 <ShieldCheck className="h-4 w-4" />
-                Judge Demo Dashboard
+                Demo Ready
               </div>
               <h1 className="mt-4 max-w-3xl text-4xl font-bold text-stone-950 sm:text-5xl">
-                Tourist Shield
+                GUARDLY
               </h1>
               <p className="mt-3 max-w-3xl text-base leading-7 text-stone-600">
                 One command center for fare checks, route deviation, hotspot warnings,
@@ -193,7 +193,7 @@ export default function Dashboard({ onNavigate }: DashboardProps) {
 
             <div className="grid gap-3 sm:grid-cols-2">
               <button
-                className="inline-flex h-11 items-center justify-center gap-2 rounded-md border border-stone-300 bg-white px-4 text-sm font-semibold text-stone-800 transition hover:bg-stone-50"
+                className="inline-flex h-11 items-center justify-center gap-2 rounded-md bg-teal-700 px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-800"
                 onClick={loadDemoMode}
                 type="button"
               >

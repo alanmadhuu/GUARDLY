@@ -4,7 +4,7 @@
 
 :root {
   color: #17201b;
-  background: #f7f8f5;
+  background: #f4f7f5;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,9 +15,18 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(13, 148, 136, 0.08), rgba(244, 247, 245, 0) 260px),
+    #f4f7f5;
 }
 
 button,
-input {
+input,
+select {
   font: inherit;
+}
+
+::selection {
+  background: #0f766e;
+  color: #ffffff;
 }

@@ -38,7 +38,7 @@ export default function RouteMap({ origin, destination }: RouteMapProps) {
   const center = useMemo(() => getRouteCenter(origin, destination), [origin, destination]);
 
   const { isLoaded, loadError } = useJsApiLoader({
-    id: "tourist-shield-google-maps",
+    id: "guardly-google-maps",
     googleMapsApiKey: apiKey || "",
   });
 

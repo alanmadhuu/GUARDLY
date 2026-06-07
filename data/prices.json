@@ -29,6 +29,24 @@
       "max_inr": 30,
       "unit": "1 liter bottle",
       "note": "MRP is usually printed on the bottle."
+    },
+    "local_sim_card": {
+      "min_inr": 300,
+      "max_inr": 600,
+      "unit": "starter pack",
+      "note": "Prepaid tourist SIM or eSIM starter packs vary by data allowance and verification needs."
+    },
+    "airport_transfer": {
+      "min_inr": 900,
+      "max_inr": 1800,
+      "unit": "one way city transfer",
+      "note": "Typical airport to central Kochi transfer by prepaid taxi or app cab."
+    },
+    "heritage_walk": {
+      "min_inr": 600,
+      "max_inr": 1500,
+      "unit": "short guided walk",
+      "note": "Small-group Fort Kochi heritage walks and market tours."
     }
   },
   "Delhi": {
@@ -61,6 +79,24 @@
       "max_inr": 30,
       "unit": "1 liter bottle",
       "note": "Avoid paying above MRP unless buying in a premium venue."
+    },
+    "local_sim_card": {
+      "min_inr": 300,
+      "max_inr": 700,
+      "unit": "starter pack",
+      "note": "Airport kiosks may quote higher activation or convenience charges."
+    },
+    "airport_transfer": {
+      "min_inr": 800,
+      "max_inr": 1800,
+      "unit": "one way city transfer",
+      "note": "Typical airport to central Delhi transfer by prepaid taxi or app cab."
+    },
+    "heritage_walk": {
+      "min_inr": 700,
+      "max_inr": 1800,
+      "unit": "short guided walk",
+      "note": "Common for Old Delhi, food walks, and monument area walking tours."
     }
   },
   "Jaipur": {
@@ -93,6 +129,24 @@
       "max_inr": 30,
       "unit": "1 liter bottle",
       "note": "MRP bottles are widely available near tourist areas."
+    },
+    "local_sim_card": {
+      "min_inr": 300,
+      "max_inr": 650,
+      "unit": "starter pack",
+      "note": "Prepaid SIM pricing depends on data pack and vendor convenience charges."
+    },
+    "airport_transfer": {
+      "min_inr": 700,
+      "max_inr": 1600,
+      "unit": "one way city transfer",
+      "note": "Typical airport to central Jaipur transfer by prepaid taxi or app cab."
+    },
+    "heritage_walk": {
+      "min_inr": 500,
+      "max_inr": 1400,
+      "unit": "short guided walk",
+      "note": "Common for Pink City bazaar walks and monument area tours."
     }
   },
   "Mumbai": {
@@ -125,6 +179,24 @@
       "max_inr": 35,
       "unit": "1 liter bottle",
       "note": "Prices can be higher inside hotels, airports, and cinemas."
+    },
+    "local_sim_card": {
+      "min_inr": 350,
+      "max_inr": 800,
+      "unit": "starter pack",
+      "note": "Airport and tourist-area sellers may add setup fees."
+    },
+    "airport_transfer": {
+      "min_inr": 900,
+      "max_inr": 2200,
+      "unit": "one way city transfer",
+      "note": "Typical airport to South Mumbai or tourist district transfer range."
+    },
+    "heritage_walk": {
+      "min_inr": 800,
+      "max_inr": 2200,
+      "unit": "short guided walk",
+      "note": "Popular for Colaba, Fort, and heritage precinct walking tours."
     }
   },
   "Bangalore": {
@@ -157,6 +229,24 @@
       "max_inr": 30,
       "unit": "1 liter bottle",
       "note": "Check printed MRP before paying."
+    },
+    "local_sim_card": {
+      "min_inr": 300,
+      "max_inr": 700,
+      "unit": "starter pack",
+      "note": "Prepaid starter packs vary by data allowance and setup assistance."
+    },
+    "airport_transfer": {
+      "min_inr": 900,
+      "max_inr": 2000,
+      "unit": "one way city transfer",
+      "note": "Typical airport to central Bangalore transfer, traffic dependent."
+    },
+    "heritage_walk": {
+      "min_inr": 700,
+      "max_inr": 1800,
+      "unit": "short guided walk",
+      "note": "Common for market, food, and colonial district walking tours."
     }
   }
 }

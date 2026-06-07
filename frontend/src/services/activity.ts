@@ -3,9 +3,9 @@ import type { PriceCheckResponse } from "../types/price";
 import type { RouteCheckResponse } from "../types/route";
 import type { DashboardActivity, DashboardSummary, ProtectionStatus } from "../types/activity";
 
-const ACTIVITY_STORAGE_KEY = "tourist-shield.activity.v1";
-const PROTECTION_STORAGE_KEY = "tourist-shield.protection.v1";
-const ACTIVITY_UPDATED_EVENT = "tourist-shield:activity-updated";
+const ACTIVITY_STORAGE_KEY = "guardly.activity.v1";
+const PROTECTION_STORAGE_KEY = "guardly.protection.v1";
+const ACTIVITY_UPDATED_EVENT = "guardly:activity-updated";
 const INR_PER_EXTRA_ROUTE_KM = 45;
 const MAX_ACTIVITY_COUNT = 40;
 
