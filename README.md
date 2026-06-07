@@ -1,8 +1,8 @@
-# Tourist Shield 🛡️
+# Guardly 🛡️
 
 ## Overview
 
-Tourist Shield is an AI-powered travel safety platform designed to help tourists avoid common scams, overcharging, and route manipulation while traveling.
+Guardly is an AI-powered travel safety platform designed to help tourists avoid common scams, overcharging, and route manipulation while traveling.
 
 The platform combines route monitoring, intelligent fare analysis, location-based scam alerts, and AI-generated safety recommendations to help travelers make safer decisions and avoid financial loss.
 
@@ -24,7 +24,7 @@ Most existing travel applications focus on navigation or bookings but do not act
 
 ## Solution
 
-Tourist Shield acts as a personal travel safety assistant.
+Guardly acts as a personal travel safety assistant.
 
 The platform:
 
@@ -34,39 +34,39 @@ The platform:
 * Uses AI to explain risks and recommend actions
 * Provides local safety insights in a simple, actionable format
 
-By combining location intelligence, mapping, and AI-powered recommendations, Tourist Shield helps tourists travel more safely and confidently.
+By combining location intelligence, mapping, and AI-powered recommendations, Guardly helps tourists travel more safely and confidently.
 
 ---
 
 ## Features
 
-### 🚕 Smart Fare Checker
+### 🚕 GuardFare™
 
 * Fair price estimation
 * Overcharge detection
 * Counter-offer recommendation
 * Money saved calculation
 
-### 🗺️ Route Watchdog
+### 🗺️ GuardRoute™
 
 * Route deviation detection
 * Distance analysis
 * Risk assessment
 * Interactive route visualization
 
-### ⚠️ Scam Hotspot Alerts
+### ⚠️ GuardAlerts™
 
 * Location-based scam warnings
 * Risk scoring
 * Safety recommendations
 
-### 🤖 AI Safety Advisor
+### 🤖 GuardAI™
 
 * AI-generated explanations
 * Travel guidance
 * Safety recommendations
 
-### 📊 Tourist Safety Score
+### 📊 GuardScore™
 
 * Unified safety score
 * Risk classification
@@ -316,7 +316,8 @@ AI development tools played a major role throughout the project lifecycle.
 
 Demo Video:
 
-[Add demo or pitch video link here]
+https://drive.google.com/file/d/1NLv6jRVPAd04oKmqjAg01ztiMFX8R-bd/view?usp=sharing
+
 
 ---
 
@@ -324,23 +325,29 @@ Demo Video:
 
 ### Home Dashboard
 
-[Add screenshot]
+<img width="1920" height="2550" alt="screencapture-127-0-0-1-5173-2026-06-07-06_53_53" src="https://github.com/user-attachments/assets/74060c8c-09f7-4955-ad1e-55d006de5a37" />
 
-### Smart Fare Checker
 
-[Add screenshot]
 
-### Route Watchdog
+### Tourist Map
 
-[Add screenshot]
+<img width="1920" height="1461" alt="screencapture-127-0-0-1-5173-2026-06-07-06_54_11" src="https://github.com/user-attachments/assets/34a81ac6-4ade-4df3-85c8-a38c255a238d" />
 
-### Scam Hotspot Alerts
 
-[Add screenshot]
+### Price Checker
 
-### Tourist Safety Score
+<img width="1920" height="927" alt="screencapture-127-0-0-1-5173-2026-06-07-06_54_41" src="https://github.com/user-attachments/assets/3a39334b-a941-4b8b-8cf3-59233b9d5dfc" />
 
-[Add screenshot]
+
+### Route Monitor
+
+<img width="1920" height="1983" alt="screencapture-127-0-0-1-5173-2026-06-07-06_55_15" src="https://github.com/user-attachments/assets/70ec581c-d309-416e-b47d-e3eeb791f247" />
+
+
+### Fare Optimizer
+
+<img width="1920" height="2922" alt="screencapture-127-0-0-1-5173-2026-06-07-06_56_03" src="https://github.com/user-attachments/assets/74e73748-b7fc-40fd-afa0-aed83150dd60" />
+
 
 ---
 
@@ -358,6 +365,6 @@ Demo Video:
 
 ## Impact
 
-Tourist Shield aims to make travel safer by helping tourists identify scams before they become victims.
+Guardly aims to make travel safer by helping tourists identify scams before they become victims.
 
-By combining AI, location intelligence, and real-time safety analysis, the platform empowers travelers with the information they need to make smarter and safer decisions.
+By combining AI, location intelligence, and real-time safety analysis, Guardly empowers travelers with the information they need to make smarter and safer decisions.
